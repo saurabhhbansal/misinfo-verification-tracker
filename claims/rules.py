@@ -45,7 +45,7 @@ def split_sentences(text: str) -> list[str]:
 
 def quantities(text: str) -> list[str]:
     t = text.translate(_DEV_DIGITS)
-    qs = [m.group(0).strip() for m in NUMBER_RE.finditer(t)]
+    qs = [m.group(0).strip().rstrip(",.").strip() for m in NUMBER_RE.finditer(t)]
     return [q for q in qs if re.search(r"\d", q) and not YEAR_RE.fullmatch(q.strip())]
 
 
@@ -75,9 +75,21 @@ def tag(sentence: str) -> tuple[float, str, list[str]]:
     return max(0.0, min(1.0, score)), kind, qs
 
 
+JUNK_RE = re.compile(r"^[\W\d_]*(date|dated|time|source|follow us|subscribe|share)?[\W\d_:/.-]*$|^@\w+$", re.I)
+
+
+def is_junk(sentence: str, min_words: int = 5) -> bool:
+    """Fragments that are not claims: bare dates, handles, numbers, very short OCR pieces."""
+    words = re.findall(r"\w+", sentence)
+    return len(words) < min_words or bool(JUNK_RE.match(sentence.strip()))
+
+
 def candidates(text: str, source: str, min_score: float = 0.3) -> list[dict]:
     out = []
     for s in split_sentences(text):
+        s = s.translate(_DEV_DIGITS)
+        if is_junk(s):
+            continue
         score, kind, qs = tag(s)
         if score >= min_score:
             out.append({"text": s, "kind": kind, "score": round(score, 2), "source": source, "quantities": qs})

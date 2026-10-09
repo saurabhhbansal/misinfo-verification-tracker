@@ -11,6 +11,7 @@ from common import config, llm
 from common.models import Claim, ContentBundle
 
 log = logging.getLogger(__name__)
+RULES_MAX_CLAIMS = 3  # without an LLM, keep only the strongest candidates
 
 SYSTEM = """You are a fact-checking assistant for Indian social media (Hindi, English, Hinglish).
 From the post content, extract the CHECKABLE factual claims: statements that can be verified true or false
@@ -36,6 +37,10 @@ def rule_candidates(b: ContentBundle) -> list[dict]:
     cands = []
     for src, text in _sections(b):
         cands.extend(rules.candidates(text, src))
+    if b.platform in ("youtube", "facebook"):
+        for c in cands:  # video descriptions are mostly channel boilerplate
+            if c["source"] == "caption":
+                c["score"] -= 0.25
     cands.sort(key=lambda c: -c["score"])
     # dedupe near-identical sentences (e.g. same text in caption and OCR)
     seen, out = set(), []
@@ -56,8 +61,9 @@ def extract_claims(b: ContentBundle, max_claims: int | None = None) -> tuple[lis
             return _llm_extract(b, cands, max_claims), "llm"
         except Exception as e:
             log.warning("LLM extraction failed, falling back to rules: %s", e)
+    limit = min(max_claims, RULES_MAX_CLAIMS)
     claims = [Claim(text=c["text"], text_en="", kind=c["kind"], source=c["source"], quantities=c["quantities"])
-              for c in cands[:max_claims]]
+              for c in cands if c["score"] >= 0.3][:limit]
     return claims, "rules"
 
 
@@ -70,7 +76,7 @@ def _llm_extract(b: ContentBundle, cands: list[dict], max_claims: int) -> list[C
     claims = []
     for c in (data.get("claims") or [])[:max_claims]:
         text = (c.get("text") or "").strip()
-        if not text:
+        if not text or rules.is_junk(text, min_words=3):  # LLM output is already curated
             continue
         claims.append(Claim(
             text=text,

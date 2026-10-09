@@ -34,6 +34,7 @@ Return JSON: {"label": "...", "rationale": "<2-3 sentences citing [E#]>", "cited
 FALSE_WORDS = ("false", "untrue", "not true", "fake", "misleading", "incorrect", "wrong", "fabricated", "manipulated", "edited", "satire",
                "scam", "baseless", "no evidence", "unproven", "झूठ", "फर्जी", "भ्रामक", "गलत")
 TRUE_WORDS = ("true", "correct", "accurate", "सच", "सही")
+NLI_MIN_RELEVANCE = 0.86
 MIXED_WORDS = ("partly", "half", "mixture", "missing context", "mostly", "exaggerat", "needs context")
 
 
@@ -117,8 +118,8 @@ def _verify_nli(claim: Claim, evidence: list[Evidence]) -> Verdict:
             if lab:
                 return Verdict(lab, f"A fact-check by {e.publisher} rated a closely matching claim "
                                     f"\"{e.rating}\" [1].", evidence=[e], confidence=0.7, method="factcheck-match")
-    # 2. NLI per passage
-    for e in evidence:
+    # 2. NLI per passage — only on closely related passages: NLI models label unrelated text as "contradiction"
+    for e in [e for e in evidence if e.score >= NLI_MIN_RELEVANCE]:
         s = nli_scores(f"{e.title}. {e.snippet}", hyp)
         if s.get("entailment", 0) > 0.7:
             support.append((s["entailment"], e))

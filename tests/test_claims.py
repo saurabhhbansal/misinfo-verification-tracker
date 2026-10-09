@@ -82,7 +82,32 @@ def test_extract_falls_back_to_rules_when_llm_fails(monkeypatch):
 def test_extract_llm_output_parsed(monkeypatch):
     monkeypatch.setattr(extract.llm, "available", lambda: True)
     monkeypatch.setattr(extract.llm, "chat_json", lambda *a, **k: {"claims": [
-        {"text": "50% पानी", "text_en": "50% water", "kind": "numeric", "source": "ocr", "queries": ["q1"]},
+        {"text": "शहर का 50% पानी दूषित है", "text_en": "50% of the city's water is polluted", "kind": "numeric", "source": "ocr", "queries": ["q1"]},
         {"text": ""}]})
     claims, method = extract.extract_claims(ContentBundle(url="u", platform="x", caption="anything"))
     assert method == "llm" and len(claims) == 1 and claims[0].queries == ["q1"] and claims[0].source == "ocr"
+
+
+# --- regressions from the DD News G20 example run (9 Oct 2026) ---
+def test_junk_fragments_are_not_claims():
+    for junk in ["Date:  11/09/2023", "@PIBFactCheck", "OVER र४१०० cr"]:
+        assert rules.is_junk(junk.translate(rules._DEV_DIGITS)), junk
+    assert not rules.is_junk("Modi Govt spent 300% more on G20 than the funds allocated in budget")
+
+
+def test_devanagari_digits_normalised_in_candidates():
+    c = rules.candidates("Modi Govt spent a WHOPPING ३००% more on G२० than the funds allocated", "ocr")
+    assert c and "300%" in c[0]["text"]
+
+
+def test_youtube_description_boilerplate_ranked_out():
+    b = ContentBundle(url="u", platform="youtube", title="PIB fact check denies claim of govt spending 300% more on G20",
+                      caption="Launched in 2003, DD News has made a name for itself to deliver balanced news.")
+    claims, _ = extract.extract_claims(b)
+    assert [c.source for c in claims] == ["title"]
+
+
+def test_nli_ignores_loosely_related_evidence(monkeypatch):
+    monkeypatch.setattr(verify, "nli_scores", lambda p, h: {"contradiction": 0.99, "entailment": 0.0})
+    ev = [Evidence(url="https://ex.com/x", title="unrelated", snippet="s", source_type="factcheck", score=0.80)]
+    assert verify._verify_nli(Claim(text="some claim about G20 spending"), ev).label == "unverifiable"
