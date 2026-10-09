@@ -39,6 +39,7 @@ class Claim:
     source: str = "caption"   # caption | speech | ocr | title
     quantities: list[str] = field(default_factory=list)
     queries: list[str] = field(default_factory=list)  # short search queries (LLM-generated if available)
+    context: str = ""        # who made the claim / how the post presents it (e.g. quoted as misleading)
 
     def query_text(self) -> str:
         return self.text_en or self.text

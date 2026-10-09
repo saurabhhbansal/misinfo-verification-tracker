@@ -14,7 +14,7 @@ MULT = {
 }
 PERCENT = ("%", "percent", "per cent", "प्रतिशत", "फीसदी")
 _Q_RE = re.compile(
-    r"(?P<num>\d[\d,]*(?:\.\d+)?)\s*(?P<u1>%|percent|per cent|प्रतिशत|फीसदी|thousand|हजार|हज़ार|lakhs?|लाख|million|"
+    r"(?<![A-Za-z\d.,\-])(?P<num>\d[\d,]*(?:\.\d+)?)\s*(?P<u1>%|percent|per cent|प्रतिशत|फीसदी|thousand|हजार|हज़ार|lakhs?|लाख|million|"
     r"crores?|करोड़|करोड|billion|अरब|trillion)?(?:\s*(?P<u2>crores?|करोड़|करोड|million|billion))?",
     re.I,
 )

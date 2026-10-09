@@ -6,6 +6,7 @@ X and Reddit search are NOT available (paid / approval-gated) and are reported a
 """
 from __future__ import annotations
 
+import html
 import logging
 from datetime import datetime, timedelta, timezone
 
@@ -22,14 +23,32 @@ def youtube_available() -> bool:
     return bool(config.GOOGLE_API_KEY)
 
 
-def youtube(query: str, days: int = 90, max_results: int = 25) -> list[Post]:
+def window_around(published: str | None, before_days: int = 7, after_days: int = 30) -> tuple[datetime, datetime]:
+    """Search window anchored on the checked post's date (or the last 90 days if the date is unknown)."""
+    now = datetime.now(timezone.utc)
+    try:
+        t = datetime.fromisoformat((published or "").replace("Z", "+00:00"))
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+    except ValueError:
+        try:  # X embed format: "Wed Sep 13 10:00:00 +0000 2023" is already ISO in our bundles; keep a fallback
+            t = datetime.strptime(published or "", "%a %b %d %H:%M:%S %z %Y")
+        except ValueError:
+            return now - timedelta(days=90), now
+    return t - timedelta(days=before_days), min(now, t + timedelta(days=after_days))
+
+
+def youtube(query: str, start: datetime | None = None, end: datetime | None = None, max_results: int = 25) -> list[Post]:
     if not youtube_available() or not query:
         return []
-    after = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime.now(timezone.utc)
+    start, end = start or now - timedelta(days=90), end or now
+    fmt = "%Y-%m-%dT%H:%M:%SZ"
     try:
         r = httpx.get(f"{YT}/search", timeout=20, params={
             "part": "snippet", "q": query[:200], "type": "video", "maxResults": max_results,
-            "publishedAfter": after, "order": "relevance", "key": config.GOOGLE_API_KEY})
+            "publishedAfter": start.strftime(fmt), "publishedBefore": end.strftime(fmt),
+            "order": "relevance", "key": config.GOOGLE_API_KEY})
         r.raise_for_status()
         items = r.json().get("items", [])
         ids = [it["id"]["videoId"] for it in items if it.get("id", {}).get("videoId")]
@@ -48,17 +67,17 @@ def youtube(query: str, days: int = 90, max_results: int = 25) -> list[Post]:
         if not vid:
             continue
         st = stats.get(vid, {})
-        out.append(Post(platform="youtube", post_id=vid, author=sn.get("channelTitle", ""),
+        out.append(Post(platform="youtube", post_id=vid, author=html.unescape(sn.get("channelTitle", "")),
                         published=sn.get("publishedAt", ""),
-                        text=f"{sn.get('title', '')}. {sn.get('description', '')}",
+                        text=html.unescape(f"{sn.get('title', '')}. {sn.get('description', '')}"),
                         url=f"https://www.youtube.com/watch?v={vid}",
                         stats={k: int(v) for k, v in st.items() if k in ("viewCount", "likeCount", "commentCount")}))
     return out
 
 
-def news(query: str, timespan: str = "1month") -> list[Post]:
+def news(query: str, start: datetime | None = None, end: datetime | None = None) -> list[Post]:
     out = []
-    for a in gdelt.articles(query, timespan=timespan, max_records=50):
+    for a in gdelt.articles(query, timespan="1month", max_records=50, start=start, end=end):
         try:
             ts = datetime.strptime(a.get("seendate", ""), "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc).isoformat()
         except ValueError:

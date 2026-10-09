@@ -17,12 +17,17 @@
 - [x] Fixes from smoke runs: sentence-transformers 6.x incompatibility (switched to plain transformers),
       GDELT 429 backoff + cache, OCR capped at 10 frames (was ~10 min per clip), stale jobs marked on restart
 
+- [x] API keys set up (Groq, Google, Tavily) and verified live
+- [x] Example run #1 with keys (DD News G20 clip `Pqr5VuY_zBc`) → found and fixed: LLM treating media repetition as
+      support (main claim was wrongly "supported"), circular evidence (the post itself), "G20" parsed as a number,
+      propagation searching relative to today instead of the post's date. Re-run: main claim now "contradicted"
+      citing PIB fact-check coverage.
+
 ## Left
-1. **Get free API keys** (one team member creates accounts) and put them in `.env`:
-   `GROQ_API_KEY`, `GOOGLE_API_KEY` (enable Fact Check Tools API + YouTube Data API v3), `TAVILY_API_KEY`.
-   Without them the app still runs, but evidence is thin and most verdicts come out "unverifiable".
-2. Finish the example run in progress (DD News clip `Pqr5VuY_zBc`), check timing after the OCR fix.
-3. Re-test with keys: LLM claim extraction (Hindi clip), Fact Check API, YouTube propagation search.
+1. **Speed**: a 42 s clip takes ~8 min (OCR ~200 s, claims ~280 s for 6 claims). Ideas: parallel claim
+   verification, fewer OCR frames, smaller Whisper model option, cache feeds.
+2. Claim `context` attribution is sometimes wrong (says "PIB screenshot" for numbers that came from the tweet).
+3. Re-test: Hindi-speech clip, X post, news article, upload; check GDELT news results with date windows.
 4. Tune `MIN_RELEVANCE` (claims/retrieve.py) and similarity thresholds on real runs.
 5. Evaluation:
    - `python -m eval.quantemp_eval --method nli --n 300` (data already in `data/eval/quantemp/`)

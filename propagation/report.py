@@ -18,6 +18,8 @@ _STOP = set("the a an and or of to in on for is are was were be this that with f
 
 def build_query(bundle: ContentBundle, claims: list[Claim]) -> str:
     """Short keyword query from the post title or the top claim."""
+    if claims and claims[0].queries:
+        return claims[0].queries[0][:120]  # LLM-written keyword query
     base = bundle.title if bundle.platform in ("youtube", "web") and bundle.title else ""
     if not base and claims:
         base = claims[0].query_text()
@@ -27,9 +29,10 @@ def build_query(bundle: ContentBundle, claims: list[Claim]) -> str:
     return " ".join(words[:10])
 
 
-def reference_text(bundle: ContentBundle, claims: list[Claim]) -> str:
-    parts = [bundle.title, bundle.caption[:500]] + [c.query_text() for c in claims[:3]]
-    return " ".join(p for p in parts if p)[:1500]
+def reference_texts(bundle: ContentBundle, claims: list[Claim]) -> list[str]:
+    """Short texts describing the post; a candidate matches if it is similar to ANY of them."""
+    parts = [bundle.title, bundle.caption[:300]] + [c.query_text() for c in claims[:3]]
+    return [p for p in parts if p and len(p) > 15]
 
 
 def analyse(bundle: ContentBundle, claims: list[Claim]) -> dict:
@@ -41,13 +44,15 @@ def analyse(bundle: ContentBundle, claims: list[Claim]) -> dict:
         report["explanation"] = "No text to search for."
         return report
 
+    start, end = search.window_around(bundle.published)
+    report["window"] = {"start": start.isoformat(), "end": end.isoformat()}
     candidates: list[Post] = []
     if search.youtube_available():
-        candidates += search.youtube(query)
+        candidates += search.youtube(query, start, end)
         report["sources_used"].append("YouTube Data API")
     else:
         report["sources_unavailable"].append("YouTube (set GOOGLE_API_KEY)")
-    candidates += search.news(query)
+    candidates += search.news(query, start, end)
     report["sources_used"].append("GDELT news")
     report["sources_unavailable"] += ["X/Twitter search (paid API, not used)", "Reddit search (API approval needed)",
                                       "Instagram/Facebook search (no public API)"]
@@ -56,8 +61,7 @@ def analyse(bundle: ContentBundle, claims: list[Claim]) -> dict:
     candidates = [p for p in candidates if p.url.rstrip("/") != bundle.url.rstrip("/")
                   and p.post_id not in bundle.url]
 
-    ref = reference_text(bundle, claims)
-    scores = similarity.score_candidates(ref, [p.text for p in candidates])
+    scores = similarity.score_against_many(reference_texts(bundle, claims), [p.text for p in candidates])
     matches = []
     for p, (jac, cos) in zip(candidates, scores):
         if similarity.is_match(jac, cos):
@@ -77,7 +81,7 @@ def analyse(bundle: ContentBundle, claims: list[Claim]) -> dict:
 
     try:
         report["news_timeline"] = [{"date": d.get("date"), "value": d.get("value")}
-                                   for d in gdelt.timeline(query, timespan="1month")]
+                                   for d in gdelt.timeline(query, start=start, end=end)]
     except Exception as e:
         log.info("GDELT timeline failed: %s", e)
     return report

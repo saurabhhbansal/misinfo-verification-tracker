@@ -42,6 +42,14 @@ def score_candidates(reference: str, candidates: list[str]) -> list[tuple[float,
     return [(ref_m.jaccard(minhash(c)), float(s)) for c, s in zip(candidates, cos)]
 
 
+def score_against_many(references: list[str], candidates: list[str]) -> list[tuple[float, float]]:
+    """Best (jaccard, cosine) of each candidate against any of the reference texts."""
+    if not references or not candidates:
+        return [(0.0, 0.0)] * len(candidates)
+    per_ref = [score_candidates(r, candidates) for r in references]
+    return [(max(s[i][0] for s in per_ref), max(s[i][1] for s in per_ref)) for i in range(len(candidates))]
+
+
 def is_match(jac: float, cos: float) -> bool:
     return jac >= JACCARD_MATCH or cos >= COSINE_MATCH
 

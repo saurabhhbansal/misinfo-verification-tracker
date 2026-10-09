@@ -65,21 +65,30 @@ def _q(query: str) -> str:
     return " ".join(words[:8])
 
 
-def articles(query: str, timespan: str = "3months", max_records: int = 25, country: str | None = None) -> list[dict]:
+def _window(timespan: str, start=None, end=None) -> dict:
+    """GDELT accepts either a relative `timespan` or absolute start/end (YYYYMMDDHHMMSS, from 2017 on)."""
+    if start and end:
+        return {"startdatetime": start.strftime("%Y%m%d%H%M%S"), "enddatetime": end.strftime("%Y%m%d%H%M%S")}
+    return {"timespan": timespan}
+
+
+def articles(query: str, timespan: str = "3months", max_records: int = 25, country: str | None = None,
+             start=None, end=None) -> list[dict]:
     q = _q(query)
     if not q:
         return []
     if country:
         q += f" sourcecountry:{country}"
-    data = _get({"query": q, "mode": "artlist", "maxrecords": max_records, "timespan": timespan, "sort": "hybridrel"})
+    data = _get({"query": q, "mode": "artlist", "maxrecords": max_records, "sort": "hybridrel",
+                 **_window(timespan, start, end)})
     return data.get("articles", [])
 
 
-def timeline(query: str, timespan: str = "1month") -> list[dict]:
+def timeline(query: str, timespan: str = "1month", start=None, end=None) -> list[dict]:
     """Daily/hourly article-volume timeline: [{'date': 'YYYYMMDDTHHMMSSZ', 'value': float}, ...]."""
     q = _q(query)
     if not q:
         return []
-    data = _get({"query": q, "mode": "timelinevolraw", "timespan": timespan})
+    data = _get({"query": q, "mode": "timelinevolraw", **_window(timespan, start, end)})
     tl = data.get("timeline") or []
     return tl[0].get("data", []) if tl else []

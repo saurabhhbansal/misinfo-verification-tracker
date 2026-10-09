@@ -111,3 +111,16 @@ def test_nli_ignores_loosely_related_evidence(monkeypatch):
     monkeypatch.setattr(verify, "nli_scores", lambda p, h: {"contradiction": 0.99, "entailment": 0.0})
     ev = [Evidence(url="https://ex.com/x", title="unrelated", snippet="s", source_type="factcheck", score=0.80)]
     assert verify._verify_nli(Claim(text="some claim about G20 spending"), ev).label == "unverifiable"
+
+
+def test_numbers_inside_names_are_not_quantities():
+    assert numeric.parse("G20 summit cost Rs 4100 crore") == [(4.1e10, "count")]
+    assert rules.quantities("COVID-19 cases rose 12%") == ["12%"]
+
+
+def test_checked_post_is_never_its_own_evidence():
+    from claims import retrieve
+    post = "https://www.youtube.com/watch?v=Pqr5VuY_zBc"
+    assert retrieve.same_post("https://youtube.com/watch?v=Pqr5VuY_zBc&t=3", post)
+    assert retrieve.same_post("https://youtu.be/Pqr5VuY_zBc", post)
+    assert not retrieve.same_post("https://www.youtube.com/watch?v=OJbbycamU2k", post)

@@ -48,7 +48,7 @@ def run(cid: str, url: str | None = None, upload: tuple[Path, str, str] | None =
         results, sources_used = [], set()
         for i, claim in enumerate(claims, 1):
             _stage(cid, f"Verifying claim {i} of {len(claims)}")
-            evidence, used = retrieve.find_evidence(claim)
+            evidence, used = retrieve.find_evidence(claim, bundle.url)
             sources_used.update(used)
             verdict = verify.verify(claim, evidence)
             results.append({"claim": asdict(claim), "verdict": asdict(verdict),
@@ -77,6 +77,6 @@ def run_bundle_only(bundle: ContentBundle) -> dict:
     claims, method = claim_extract.extract_claims(bundle)
     results = []
     for c in claims:
-        ev, _ = retrieve.find_evidence(c)
+        ev, _ = retrieve.find_evidence(c, bundle.url)
         results.append({"claim": asdict(c), "verdict": asdict(verify.verify(c, ev))})
     return {"claims": results, "claim_method": method, "propagation": propagation.analyse(bundle, claims)}

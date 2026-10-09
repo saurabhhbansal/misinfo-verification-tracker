@@ -20,7 +20,14 @@ log = logging.getLogger(__name__)
 
 SYSTEM = """You are a careful fact-checker. Decide whether the CLAIM is supported or contradicted by the EVIDENCE.
 Use ONLY the evidence given; do not use outside knowledge. Pay close attention to numbers, units, dates, places
-and who said what. A fact-check article that rates the same claim False/Misleading counts as contradicting it.
+and who said what.
+Rules for weighing evidence:
+- An article that only REPORTS that someone made the claim ("X alleged that...", "a viral post says...") is NOT
+  support for the claim. Support requires a source that independently confirms the fact (official data,
+  government records, a fact-check rating it true, reporting that verifies the figure).
+- A fact-check article or an official/government source that rates or shows the claim False/Misleading counts as
+  contradicting it, and outweighs media that merely repeat the claim.
+- If credible sources disagree on the figure, use "conflicting".
 
 Labels:
 - "supported": evidence clearly confirms the claim (numbers match within rounding).
@@ -74,7 +81,8 @@ def verify(claim: Claim, evidence: list[Evidence]) -> Verdict:
 
 def _verify_llm(claim: Claim, evidence: list[Evidence]) -> Verdict:
     ev_text = "\n\n".join(_fmt(i + 1, e) for i, e in enumerate(evidence))
-    user = f"CLAIM: {claim.text}\n(English: {claim.text_en or claim.text})\n\nEVIDENCE:\n{ev_text}"
+    ctx = f"\nCONTEXT FROM THE POST: {claim.context}" if claim.context else ""
+    user = f"CLAIM: {claim.text}\n(English: {claim.text_en or claim.text}){ctx}\n\nEVIDENCE:\n{ev_text}"
     data = llm.chat_json(SYSTEM, user)
     label = data.get("label", "unverifiable")
     if label not in ("supported", "contradicted", "conflicting", "unverifiable"):

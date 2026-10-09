@@ -10,7 +10,7 @@ import re
 _DEV_DIGITS = str.maketrans("०१२३४५६७८९", "0123456789")
 
 NUMBER_RE = re.compile(
-    r"(?:₹|rs\.?|inr|\$|usd)?\s?\d[\d,]*(?:\.\d+)?\s?"
+    r"(?<![A-Za-z\d.,\-])(?:₹|rs\.?|inr|\$|usd)?\s?\d[\d,]*(?:\.\d+)?\s?"
     r"(?:%|percent|per cent|प्रतिशत|फीसदी|lakh|lakhs|crore|crores|million|billion|trillion|thousand|"
     r"लाख|करोड़|करोड|हजार|हज़ार|अरब)?",
     re.I,

@@ -17,14 +17,18 @@ SYSTEM = """You are a fact-checking assistant for Indian social media (Hindi, En
 From the post content, extract the CHECKABLE factual claims: statements that can be verified true or false
 with public evidence. Prioritise claims with numbers, statistics, dates, named people/organisations, and
 attributions ("according to the government", "WHO says"). Ignore opinions, jokes, questions, greetings and
-calls to action. Each claim must be atomic and self-contained (resolve pronouns; add who/where/when if known
+calls to action, and channel/publisher self-descriptions or boilerplate (e.g. "XYZ News is India's 24x7
+channel...", subscribe/follow text). Each claim must be atomic and self-contained (resolve pronouns; add who/where/when if known
 from the post). Do NOT judge truth. Do NOT invent claims not present in the content.
 
 Return JSON: {"claims": [{"text": "<claim as stated, original language>",
  "text_en": "<faithful English version>",
  "kind": "numeric|date|attribution|entity|other",
  "source": "title|caption|speech|ocr",
+ "context": "<who made the claim and how the post presents it, e.g. tweet by X, shown in the post as misleading>",
  "queries": ["<short web search query in English>", "<optional second query, Hindi if the topic is Indian>"]}]}
+If the post quotes someone else's claim (e.g. a screenshot of a tweet it is debunking), extract that claim and
+describe this in "context".
 Return at most MAX claims, most check-worthy first. Return {"claims": []} if nothing is checkable."""
 
 
@@ -85,5 +89,6 @@ def _llm_extract(b: ContentBundle, cands: list[dict], max_claims: int) -> list[C
             source=c.get("source") if c.get("source") in ("title", "caption", "speech", "ocr") else "caption",
             quantities=rules.quantities(text),
             queries=[q for q in (c.get("queries") or []) if isinstance(q, str)][:2],
+            context=(c.get("context") or "").strip()[:300],
         ))
     return claims

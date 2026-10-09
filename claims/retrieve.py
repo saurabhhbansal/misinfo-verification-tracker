@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from concurrent.futures import ThreadPoolExecutor
 
 from claims.sources import factcheck_api, feeds, web
@@ -22,8 +23,9 @@ def _gather(claim: Claim) -> tuple[list[Evidence], list[str]]:
     jobs = {
         "Indian fact-checkers (RSS search)": lambda: [e for q in queries[:2] for e in feeds.search_factcheckers(q)],
         "PIB / fact-check latest feeds": feeds.latest_items,
-        "GDELT news": lambda: web.news_gdelt(q0),
     }
+    if not web.tavily_available():  # GDELT is rate-limited (1 req / 5 s); only needed without a web-search key
+        jobs["GDELT news"] = lambda: web.news_gdelt(q0)
     if factcheck_api.available():
         jobs["Google Fact Check API"] = lambda: [e for q in queries for e in factcheck_api.search(q)]
     if web.tavily_available():
@@ -63,6 +65,22 @@ def rerank(claim: Claim, items: list[Evidence], top_k: int = TOP_K, min_rel: flo
     return ranked[:top_k]
 
 
-def find_evidence(claim: Claim) -> tuple[list[Evidence], list[str]]:
+def _norm_url(u: str) -> str:
+    u = u.split("#")[0].lower().replace("://www.", "://").replace("://m.", "://")
+    return u.rstrip("/")
+
+
+def same_post(url: str, post_url: str | None) -> bool:
+    """True if `url` is the post being checked (would be circular evidence)."""
+    if not post_url:
+        return False
+    if _norm_url(url).split("&")[0] == _norm_url(post_url).split("&")[0]:
+        return True
+    m = re.search(r"(?:v=|youtu\.be/|shorts/|status/)([\w-]{6,})", post_url)
+    return bool(m and m.group(1) in url)
+
+
+def find_evidence(claim: Claim, post_url: str | None = None) -> tuple[list[Evidence], list[str]]:
     raw, used = _gather(claim)
+    raw = [e for e in raw if not same_post(e.url, post_url)]
     return rerank(claim, _dedupe(raw)), used
