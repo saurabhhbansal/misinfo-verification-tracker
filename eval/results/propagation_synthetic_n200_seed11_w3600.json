@@ -1,0 +1,39 @@
+{
+  "n": 200,
+  "seed": 11,
+  "window_s": 3600,
+  "false_alarms_by_negative_kind": {
+    "wave": 28
+  },
+  "coordination_flag(high)": {
+    "precision": 0.781,
+    "recall": 1.0,
+    "f1": 0.877,
+    "confusion[[tn,fp],[fn,tp]]": [
+      [
+        72,
+        28
+      ],
+      [
+        0,
+        100
+      ]
+    ]
+  },
+  "any_flag(high|elevated)": {
+    "precision": 0.775,
+    "recall": 1.0,
+    "f1": 0.873,
+    "confusion[[tn,fp],[fn,tp]]": [
+      [
+        71,
+        29
+      ],
+      [
+        0,
+        100
+      ]
+    ]
+  },
+  "seconds": 91.1
+}

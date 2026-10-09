@@ -23,17 +23,16 @@
       propagation searching relative to today instead of the post's date. Re-run: main claim now "contradicted"
       citing PIB fact-check coverage.
 
+- [x] Speed: 722 s -> 182 s per 42 s clip (Whisper threads, STT||OCR, embedding cache, parallel claims)
+- [x] Evaluations run -> docs/evaluation.md (QuanTemp NLI n=300, LLM n=150; synthetic propagation, window tuned
+      60 -> 10 min and validated on a held-out seed)
+
 ## Left
-1. **Speed**: a 42 s clip takes ~8 min (OCR ~200 s, claims ~280 s for 6 claims). Ideas: parallel claim
-   verification, fewer OCR frames, smaller Whisper model option, cache feeds.
+1. Forced-choice QuanTemp LLM run (same 150 claims) for like-for-like comparison with the paper (needs Groq quota).
 2. Claim `context` attribution is sometimes wrong (says "PIB screenshot" for numbers that came from the tweet).
 3. Re-test: Hindi-speech clip, X post, news article, upload; check GDELT news results with date windows.
 4. Tune `MIN_RELEVANCE` (claims/retrieve.py) and similarity thresholds on real runs.
-5. Evaluation:
-   - `python -m eval.quantemp_eval --method nli --n 300` (data already in `data/eval/quantemp/`)
-   - same with `--method llm` once Groq key is set
-   - `python -m eval.propagation_eval --n 200` (synthetic coordination)
-   - optional: AVeriTeC dev subset; CheckThat! check-worthiness for the claim extractor
+5. Optional extra evaluation: AVeriTeC dev subset; CheckThat! check-worthiness for the claim extractor.
 6. 4–5 documented real example runs (YouTube Hindi, X post, news article, upload, unsupported Instagram).
 7. README (setup, keys, run, module owners), `.env.example`, `docs/architecture.md` → final version,
    limitations + future scope (incl. original-poster account-history analysis, Reddit/X search, IndicConformer,

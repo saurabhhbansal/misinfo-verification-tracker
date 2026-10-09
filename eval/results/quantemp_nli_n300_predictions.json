@@ -1,0 +1,2402 @@
+[
+ {
+  "claim": "6,000 VAERS reports were deleted for being foreign entries, CDC says",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Travis County’s sheriff refuses to enforce 8 USC 1373.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says her congressional district has 10,000 medical-device industry jobs and 1,000 will be lost because of health-care law tax.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Congress-led Chhattisgarh government allotted 6,800 hectares of government land to Karachi-based organisation Dawat-e-Islami, to which Kanhaiya Lal's killers had ties.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Gov. Rick Perry broke his promise that he would not accept a $40,000 pay increase.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Donald Trump has written 10 checks to Hillary Clinton \"and four of those checks were not to her Senate campaign. … It was to her presidential campaign.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Ronald Reagan won the 1980 presidential election in a landslide despite trailing Jimmy Carter in public opinion polls two weeks earlier, so polls cannot be trusted to predict election results.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Photo shows Sri Lankan police during a drug bust operation that turned violent in Atulugama in September 2020",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The \"working tax cut\" created \"over 40,000 new jobs in just the last four years.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video shows fake ₹2000 notes are being printed in the country",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says President Barack Obama \"has an Environmental Protection Agency proposal that would raise the price of gasoline by 25 cents a gallon.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A video shows an attack during a Black Lives Matter protest in June 2020.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Ein Foto zeige die aktuellen Spritpreise auf Teneriffa, die in etwa zwischen 90 Cent und 1 Euro pro Liter liegen.",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "A recent news clipping reporting the rape and murder of a 5-year-old girl at a temple on the pretext of Kanya Puja",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Singapore's Ministry of Health released a list showing the day-to-day progress of COVID-19 symptoms during the first nine days of infection.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Hillary Clinton used a green screen to add fake audience members during her August 2016 speech in Nevada.",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "A teenager was killed after his Xbox One malfunctioned and forcefully ejected a disc that slashed his throat.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Charlie Crist rode on a jet that \"belongs to a serial polluter with a history of environmental violations fined nearly $2 million for polluting water.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says middle class taxpayers \"subsidize Walmart’s horrendously low wages to the tune of at least $6.2 billion every year.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Ein E-Auto spare erst nach 127.500 Kilometern Fahrt oder 8,5 Jahren CO2-Emissionen gegenüber einem neuwertigen Benziner ein. Im Vergleich zu einem Diesel dauere es 219.000 Kilometer oder 14,6 Jahre.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says \"80 percent of the health care dollars are spent by 20 percent of the population.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A U.S. F-35B fighter jet flew by a Chinese vessel that fired a water cannon at two Philippine Coast Guard vessels in the West Philippine Sea in July 2023",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Charlie Crist allowed college tuition to increase up to 15 percent every year.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Prior to 1983, academic certificates were exclusively issued in handwritten format. The font utilized in Modi’s M.A certificate ‘Old English Text MT’ was invented and patented only in 1992. Additionally, the word “University” is misspelled as “Unibersity” on the certificate",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“In 1999 Lagos was generating N700 million in internally generated revenue per month.”",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says if Texas abortion measure passes, \"someone living in El Paso would have to drive 550 miles each way to San Antonio for something as simple as cervical cancer screening.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "On March 21, 2021, an adviser to former U.S. President Donald Trump said he was preparing to launch his own social media platform.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "The non-partisan Congressional Budget Office concluded ObamaCare will cost the U.S. more than 800,000 jobs.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Erv Nelson voted \"yes on the pro-amnesty SJR 21, a bill urgingCongress to provide citizenship for those residing illegally in our country.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "One of the interesting things about the Recovery Act was most of the projects came in under budget, faster than expected, because there's just not a lot of work there.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A genuine email message says you've won a $500 gift card for Ulta Beauty.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In a Nov. 3, 2020 interview with reporters in Wilmington, Delaware, U.S. Democratic presidential candidate Joe Biden likened his experiences playing ball with Black athletes to Stephen King’s Green Mile.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A CCTV footage has gone viral on social media in which two men are trashed in the DM’s office.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Medicare is paying hospitals $13,000 for patients admitted with COVID-19 diagnoses and $39,000 if those patients are placed on ventilators.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "'FDA experts reveal the Covid-19 Vaccines are killing at least 2 people for every 1 life they save'",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "Says Newt Gingrich \"has said that we should make the 11 million illegal workers that are in this country legal.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A poll taken \"a few months ago\" found \"70 percent approval or higher\" for the Act 10 collective bargaining law.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The transportation sales tax would cost the average consumer an estimated $112 a year.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A Florida zoo employee was killed while attempting to sexually assault a 12-foot alligator.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says Hillary Clinton’s approval rating went from 70 percent to 52 percent in 18 months.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "[In 2014-2015] coverage for the rotavirus vaccine exceeded the 95% target and the pneumococcal vaccine reached 91.5%.",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Again, DON'T share this photo of a 10-year-old girl in Kenya. Mother warns of emotional damage",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“CDC quietly deletes 6,000 COVID vaccine deaths from its CDC website total in one day.”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Text Message Falsely Claims The Federal Government Plans To Institute 30 Days Of Martial Law To Curb The Spread Of Coronavirus",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The default rate for college students has grown from 40 percent 10 years ago to about 50 percent today, and \"perhaps as many as 800,000 young Ohioans are facing default on their student loans.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Flu caused more deaths in the UK than Covid-19 did between 19 June and 31 July.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "There are more African American men in prison, jail, on probation or parole than were enslaved in 1850.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Irish midget accused of posing as a leprechaun to extort sex from 26 women in exchange for pot of gold",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Foot Locker donated $200 million to Black Lives Matter",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Says Massachusetts has three state-mandated student tests and Finland just one.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says combined inflation and unemployment rates in October 2011 were the highest since Ronald Reagan succeeded Jimmy Carter.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Newspaper clipping stating Nepal recently occupied 7100 acres of Indian territory",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "According to International Olympic Committee data, “an average of 29 athletes under the age of 35 suffered sudden death per year from 1966 to 2004. From March 2021 to March 2022, 769 athletes have died or suffered cardiac arrest.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Last year, we had zero percent growth in GDP in Virginia ...The only states that did worse than us were Alaska and Mississippi.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Trump campaign has unveiled its 2020 campaign strategy of airing unedited footage of speeches and press conferences by far-left Democrats.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A video shared on July 5, 2023, authentically showed the biggest library in France being burned down by protesters.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "HR 6666 Would NOT Ban Anyone Not Vaccinated For COVID-19 From Churches, Schools, Medical Buildings That Get Money From The Bill",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“South Africa was the first African country to legalise same-sex marriages back in 2006. It was the fifth country in the world to take this bold step.”",
+  "gold": "True",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "Says the state of Maryland issued these Independence Day 2020 safety guidelines.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A study performed at the Los Alamos National Laboratory found that millimeter wave body scanners commonly used by airport security can alter your DNA.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "We have given priority to clean energy, (geothermal, wind power, solar and hydro), which now accounts for over 75% of the installed capacity compared to the world average of only 24%.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "President Trump issued an order authorizing the U.S. Treasury to freeze the assets of two former First Families, the Obamas and Clintons.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Rick Scott tried to slash school funding by $3.3 billion.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Mark Kelly \"voted to allow prison inmates to receive stimulus checks five separate times.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Vitamin K shots are poisonous because they contain polysorbate 80 as “main active ingredient” that has “strong links with infertility, with autoimmune issues”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In 1962, Joe Biden “worked with segregationists,” Elizabeth Warren “debated as a pro-Vietnam conservative” while Bernie Sanders “organized against segregation and Vietnam war”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "About 60% of unemployed youth aged below 35 years have never worked.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "We’re only spending 2 percent of our GDP on our infrastructure, while China and India are spending 10 percent of their GDP reinvesting back into their country.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Are conservationists dyeing elephant tusks and rhino horns pink? No – photos have been digitally altered",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Shehbaz Sharif congratulated Congress for winning the Karnataka elections and said the two 'will work for the strengthening of Islam in India'.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "”To date, 385 public entities have been registered in the portal, and 5,236 contracts published valued at Ksh 146.5 billion.”",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The director of Al Jazeera Palestine pleads with Israeli army to wait for ten minutes before the air strike on their office in Gaza",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "We have the lowest percentage of Americans working today of any year since 1977.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Since 1947, India has been paying 10 billion rupees pension to Queen Elizabeth ; India is bound to give 30 thousand tons of Beef every year to Britain",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Facebook posts that list more than 30 reasons in the world economy as to \"why Ukraine matters\" contain accurate data.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "12,000 Doctors Just Urged the FDA to Put Cancer Warnings on Cheese",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "No evidence authorities found US$27 billion belonging to dead Nigerian",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Philippines handpicked the panel members in the arbitration panel that decided in July 2016 on the South China Sea maritime dispute with China.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A 12-year-old girl livestreamed her suicide by hanging.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Elected officials draw (legislative redistricting) maps. That’s it.",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "Says Kevin Cramer voted to let insurance companies go back to denying coverage for 300,000 North Dakotans with pre-existing conditions.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In Shirsal village of Beed district, lava was seen coming out of the ground when bore well was drilled for 1200 feet",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Drivers of non-electric vehicles will be fined £12 every time they drive past a ULEZ camera.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“Last year alone, 10 million fell ill from TB and 1.5 million died. ... Why don’t we wear masks for TB?”",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Installed capacity has increased from 1,768 MW in March 2013 to the current 2,712 MW.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "31 Rohingya who won West Bengal elections chanted 'Pakistan zindabad'",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A German football club was banned from playing games outside Germany in 1934, after they failed to give a Nazi salute.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "She \"led the fight to stop health insurance rate hikes and saved Rhode Island families over $150 million.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Leni Robredo will spend time in jail after the Commission on Audit flagged her old office, the Office of the Vice President, in its 2021 audit report.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Photo of person holding sign shows the shooter who killed six people at a Nashville, Tennessee, school.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Juliane Koepcke survived 10 days alone in the Amazon rainforest after falling nearly two miles during a plane crash.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“We made more progress [with North Korea] in that four or five months than they’ve made in 70 years.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "PayPal ‘reinstated’ a fine of $2500 for spreading misinformation",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Only two Coca-Cola executives know Coke's formula, and each of them knows only half of it.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“Bill Gates admits his COVID-19 vaccine might kill nearly 1 million people.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "You can make a substance that removes body hair by mixing one tablespoon of 2% iodine and one cup of baby oil.",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "This is what President Obama said the jobless rate would be if we passed the stimulus: 5.6 percent.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video shows infant rescued in India, not Morocco post 2023 earthquake",
+  "gold": "Conflicting",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "In September 2021, Norway lifted coronavirus-related restrictions after health officials reclassified COVID-19 as a less severe disease comparable to the flu.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says \"Harry Reid has a better voting attendance record than these three Congressmen!",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Man puts on his terrace 70 fake plants of weed to taunt the police",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "So the number on DACA is 800,000, but every one person can bring in their entire extended family once they reach a certain status. So it's 3 or 4 million, right?",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Raising the minimum wage to $10.10 an hour, \"would help lift over a million Americans out of poverty.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "President John F. Kennedy proclaimed that \"nobody can stop an assassination\" just before he was shot and killed in 1963.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video of two children helping a handicapped man to fix the problem in his tricycle",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Anheuser-Busch will give away free beer when 70% of the nation's adults have had at least one COVID-19 vaccine shot.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "This video shows the Indian cricket captain Virat Kohli asking his Afghan counterpart Mohammad Nabi to choose bowling after the latter won the toss in the match held on November 3 between the two countries in the T20 World Cup 2021. This is evidence of match-fixing between India and Afghanistan.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Gang initiates planned to kill 30 or more women around Halloween 2008.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Our county now has the fastest growing airport in America, attracting nearly 1,000 new private sector jobs.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Netflix announced in April 2017 that it was creating a new 'Harry Potter' television series.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "When one person sneezes, it goes all the way through the aircraft.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "There are so many loopholes ... our businesses pay effectively one of the lowest tax rates in the world.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Sudha Murty spends one day every year selling vegetables.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says she \"oversaw an audit that won the city $2 million in franchise fees.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Jules Bailey \"was instrumental in creating the Business Energy Tax Credit that let companies like Wal-Mart profit by $11 million while costing the Oregon general fund $33 million.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says area near proposed northern Wisconsin iron ore mine is \"15 hours away\" from where public hearing on mining was held.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Prior to Obamacare here in Wisconsin, 95 percent of Wisconsinites were covered by insurance. After Obamacare, 95 percent of Wisconsinites were covered by insurance. It hasn’t had an impact.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says his state budget will \"provide an increase in state funding\nfor the 2011-12 school year.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Francisco Domagoso admitted he squandered 70 million pesos in a video",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In July 2021, a 10-year-old in Colorado died from causes associated with the plague, a disease caused by the bacteria Yersinia pestis.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Liking and sharing a post will get you £35 of free food from Iceland.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Tom Ganley supports a 23 percent national sales tax that would raise taxes on the middle class while giving a huge tax break to millionaires like himself.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "When I left Washington, we had a $5 trillion surplus.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The percentage of black children born without a father in the home has risen from 7 percent in 1964 to 73 percent today, due to changes from President Lyndon Johnson’s Great Society.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "When career politician Daniel Webster became speaker of the House, he wasted $32,000 of our money on a spiral staircase for his office.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Democrats pledged to \"force all North Carolinians into a single-payer health insurance scheme\" that would cost $72 billion.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "80 doctors who received Covid-19 shots died in last 60 days",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In a letter addressed to the UP CM Yogi Adityanath, Union Home minister Amit Shah said maximising Covid-19 vaccination registrations can ensure success in the 2022 assembly election.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A photograph shows a 9-year-old girl who was impregnated by a Muslim man.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video of four sadhus beaten up is related to child kidnapping in Sangli, Maharashtra",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In May 2021, U.S. President Joe Biden's administration announced it would waive some sanctions on the corporate entity and CEO overseeing the construction of Russia’s Nord Stream 2 pipeline into Germany.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Say Portland Public Schools' central administration makes up less than 4 percent of the staff.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "During an interview broadcast on March 16, 2021, U.S. President Joe Biden said \"don't come\" to migrants considering trips to the U.S.-Mexico border to seek asylum in America.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“This is striking: 50% of households that claim State & Local Tax deduction make under $100K — & now @SpeakerRyan wants to throw it away.”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "US authorities found 39 missing children in a double-wide trailer in Georgia",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "President Trump is asking everyone to forward this email… The TRUMP Rules: Congressional Reform Act of 2017.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "The video shows a Hindu priest getting caught with two women by people in India.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Today, there are more Hoosiers going to work than ever before in the 200-year history of the great state of Indiana.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Sarah Huckabee Sanders tweeted, “It’s ‘odd’ that the ANTIFA insurgency happened just as COVID-19 loses steam It’s ‘odd’ that COVID-19 happened the moment impeachment failed. It’s ‘odd’ that impeachment happened the moment Russian hoax failed. The Russian hoax happened because Hillary lost? Notice the pattern?”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "For every 25 men brought to trial for rape, 24 will walk free...",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "GHS10 million out of the whopping GHS436, 540,000 to be collected from CST has been allocated to the Cyber Security Authority",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Manhattan District Attorney Alvin Bragg closed down New York City, called up 38,000 New York police officers and is spending an estimated $200 million in city funds as part of thearraignment of former President Donald Trump.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The National Science Foundation awarded $700,000 to fund a climate change musical.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Image shows farmers protest in Haryana held on September 10, 2020, against three agriculture ordinances passed by the Central government.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "The Trump administration “added over 209,000 jobs, including 16,000 new manufacturing jobs, to Pennsylvania over the last three years.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Police report shows “massive 2020 voter fraud uncovered in Michigan.”",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "We moved 100 times as many people out of poverty as moved out when President (Ronald) Reagan was in office, with 40 percentmore jobs.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The previous administrations combined issued 6 million title deeds to Kenyans in five [50] years; in the last seven years my administration has issued 5.1 million title deeds.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "One of the men arrested in relation to the Bengaluru communal riots had gone out to buy coriander leaves at 1 am in the midnight.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Media outlets reported that the same boy died 3 times from the coronavirus, in 3 countries.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A video of a \"sun bear\" that went viral in late July 2023 did not actually depict an animal but rather a person wearing a bear costume.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "In September 2021, the U.K. government announced its intention to create a new criminal offense of pet abduction.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Sara Gideon’s husband’s law firm “took up to $2 million” from the same federal program she “falsely” attacked Susan Collins over.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A screenshot with a list of opinion poll predictions is published by ‘NDTV’, and all these predict Congress winning majority seats in the 2023 Karnataka Assembly Elections",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "When Marcy Kaptur brought home $42 million for new manufacturing jobs, Dennis Kucinich voted 'no'.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says that Biden’s ban on new federal leases will kill 120,000 Texas jobs.",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "I've spent 20 years devoted to working on behalf of families who are having a tough time and are seeking out the American dream.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Right now, America has $1.1 trillion of student debt. That’s more than credit card debt.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Says Pat McCrory \"shepherded in driver’s licenses for illegal aliens in the aftermath of the 9/11 terrorist attacks.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Hollywood Reporter published a column in 1937 criticizing actors for speaking out against Nazi Germany.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "UttarPradesh police is running a 30 days mask checking campaign and those who will found guilty will have to pay a Chalaan or may send behind the bars for 10 hours.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Vice Chancellor KS Shastri who signed PM Modi's degree passed away in 1981",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "The various offices of state government have purchased more than $11 million in vehicles, not counting leases, for use from the Governor on down during the last two years.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“15 days left to vote BUT if you are voting by mail, you need to vote TODAY. USPS says it needs a 14 day roundtrip to be counted on election day.”",
+  "gold": "Conflicting",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "If a $1.3 billion dollar Powerball jackpot were shared with every American, we'd all get $4 million each.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says the University of Texas can afford to build a medical school because it has a $7 billion endowment and its football program had a $50 million profit last year.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Not treating a Covid-19 patient with Vitamin D, zinv, ivermectin, hydroxychloroquine, steroids, azithromycin and blood thinners constitutes medical malpractice",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Four Indian army soldiers, who were killed in Punjab’s Bhatinda Military Station, belong from 18 Horse Regiment.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Rhode Island spends less than 10 percent of what the average state spends promoting tourism.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Company affiliated with Matt Gaetz had $482,321 in PPP loans forgiven",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Iowa has the fourth fastest-growing personal income in the United States, while nationally, the real wage has decreased over the past eight years that Congressman (Bruce) Braley has been there by 2.7 percent.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Punjab police has released different pictures of Amritpal Singh, including one which shows him in long hair.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Women in Oregon are paid 79 cents for every dollar paid to men. If the wage gap was eliminated, a working woman in Oregon would have enough money for 2,877 gallons of gas, 72 more weeks of food for her family or nearly 12 more months of rent.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "4 Democrat Senators Are Turning Republican Because They Oppose Impeachment",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "We had a waiting list in Chittenden County when I came into office of about 700. ... We opened a new treatment hub in St. Albans, and it reduced that number to zero.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The “wind turbine graveyard” in Casper, Wyoming, is home to more than 1,100 wind turbine blades that have been disposed of and buried in a local landfill since 2019.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“25% of residents in German nursing home died after Pfizer vaccine”; a team including a soldier in uniform used force to vaccinate residents",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "The 1974 comedy “Young Frankenstein” directly inspired the title for rock band Aerosmith’s song “Walk This Way.”",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "By the time [Mwai Kibaki] was leaving in 10 years, we were collecting almost a trillion.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A total of 58 peer-reviewed papers published in the first half of 2017 conclude that global warming is a myth.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "President Obama pledged to go through the budget 'line by line,' but on his watch, non-defense spending has spiraled out of control, increasing by 67 percent in the last year alone.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A news report about a bullet mark on Bongbong Marcos' window illustrates an assassination attempt him this 2022",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "COVID-19, along with the sun's UV rays, entered the earth through the depleted spaces in the ozone layer.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "There are 321,092 public school teachers in Texas. And there are 313,850 non-teachers in our public schools.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "A recent study of a proposed cap-and-trade policy’s effect on Wisconsin consumers showed it could \"raise gasoline prices by 141 percent and electricity rates by 171 percent\" by 2030.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Japanese citizens boycotting goods made in USA over nuclear bombing in 1945",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "57% of the jobs created\" in Austin \"from 2009 to 2013 do not pay families a living wage.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video shows US soldiers greeting Trump supporters gathering for a January 6, 2021 rally in Washington DC",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Canadian outlet Global News did not report that Pfizer’s COVID-19 vaccine recorded a 12% efficacy rate",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Viral Post Falsely Claims To Show Joe Biden ‘Making Out’ With A 15-Year-Old Girl",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Joe Biden has said 150 million Americans died from guns and another 120 million from COVID-19",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says a military Humvee labeled “COVID-19 quarantine team” was on Interstate 696 in Michigan.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Having a dry throat will cause germs to enter one's body",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Taliban govt of Afghanistan has restored Buddha of Bamiyan withing one year. When is Narendra Modi govt going restore Babri Masjid ?",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Since Obama took office, a net of 540,000 additional black Americans – Obama’s strongest supporters – have lost their jobs.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In Austin, Texas, the average homeowner is paying about $1,300 to $1,400 just for recapture,\" meaning funds spent in non-Austin school districts.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Technology coming to Virginia allows COVID-19 personal protection equipment to be “decontaminated and reused 20 times without degrading performance.”",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Video of BJP leader Jyotiraditya Scindia mistakenly asking people to vote for Congress in the Uttar Pradesh Assembly Elections (2022)",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Images do not show parked passenger jets in Davos WEF in May 2022",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Says 19,000 text messages exchanged between former FBI officials that were \"purposely and illegally deleted ... would have explained (the special counsel investigation) hoax.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A November 2017 Facebook post includes photographs that show the slave trade in Libya in 2017.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "For the last 60 years, under the Congress government, soldiers have travelled in general bogies by lying down at the empty space near toilets. But when these images were sent to Modi and Suresh Prabhu, they arranged flights for the soldiers in the army.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video shows 142 Chinese PLA soldiers died along LAC in last 6 months",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Photographs show the place where two oceans meet in the Gulf of Alaska.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "U.S. President Donald Trump tweeted that Barack Obama \"had 8 years to prepair the next president for a pandemic and he failed.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "If you got rid of the income tax today you'd have about as much revenue as we had 10 years ago.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“Last financial year the Kenya Revenue Authority reported that the PAYE (Pay As You Earn) was KSh461 billion”. ",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In the Illinois Legislature, Barack Obama \"voted 'present,' instead of yes or no\" on seven votes involving abortion rights.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Congressman (Ron) DeSantis sponsored legislation to increase sales taxes by 23 percent, hurting families, destroying jobs, devastating tourism",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Shoprite promoting thousands of casual jobs for December 2021 on Facebook",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Florida fisherman lost at sea for 14 days claims he was sexually assaulted by mermaids",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "NASA confirms Earth will experience 15 days of darkness In November 2017.",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "In 2010, everybody said you can't dare let guns go into the national parks, and of course the rapes, murders, robberies and assaults are down about 85 percent since we did that.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“As Republicans try to repeal the Affordable Care Act, they should be reminded every day that 36,000 people will die yearly as a result.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Maharashtra government is set to impose a full lockdown from March 1, 2021.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Pfizer released a document which states more than thousand people died due to Pfizer's COVID 19 vaccine with 42,000 people suffering side effects.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A bill to create a debt regulatory institution has been pending in Parliament for nearly one year.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Images show child who died of an elephant attack in August 2020",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Central Government said that the schools will remain closed till December 2020.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says 55 percent of council members have come from area where only 10 percent of Austinites live.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "13-year-old girl raped and burnt alive in Rajasthan",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "“The fact is that I had zero emails that were classified.”",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Video shows cattle washed away in August 2020 flood in China",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says George Floyd’s criminal history includes “23 arrests,” “3 car thefts” and many violent crimes.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "‘Today, we grapple with multiple challenges with a population exceeding 200 million.’",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "The United Nations Economic Commission for Africa is projecting that Africa’s growth will drop to 1.8%, and perhaps lower.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Emma González was photographed attacking a truck belonging to a \"Second Amendment supporter\" during a March for Our Lives event in March 2018.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The unemployment rate in Nigeria rose to 9.9 per cent in 2015 as the administration came on board.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Public employees receive \"something like 25 percent of the paychecks that are issued in Rhode Island.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Yes, one Florida school says it won’t hire teachers who get the COVID-19 jab, but it’s false to say people ‘shed’ the vaccine",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video shows Pakistani pilgrims housed in inadequate facilities in 2022",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The Centers for Disease Control and Prevention reported that more than 16,000 American deaths had been caused by the COVID-19 vaccines as of Dec. 23.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A viral photograph in August 2021 shows a real healthcare worker who, as described in her placard, treated COVID-19 patients for \"573 days\" without being vaccinated or contracting the virus.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "President Trump praised KFC founder Colonel Sanders, who wasn't born until 1890, for his service during the Civil War.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“With President Xi in China, I see him and say, ‘President, you have 1.5 billion people. Do you have a drug problem?’ ‘No, no, no drug problem.’ ”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In June 2017, the FDA announced it would be banning the use of triclosan in various products, including Colgate Total.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Using saunas once a week reduces risk of death from any cause by 30 to 40%, maybe even more. Use of saunas three times a week reduces this a further 30 to 40%.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "RBI is releasing new Rs. 1000 notes and taking back Rs. 2000 notes.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "In the 2016 EU referendum, 148 Labour constituencies voted to leave, 84 to remain. 247 Conservative constituencies voted to leave, 80 to remain.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Olena Zelenska has been pictured on a private jet returning from a 40,000 euro Christmas shopping spree in Paris.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A 47-year-old Georgia man was arrested after keeping his deceased mother in the freezer for years.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“… in contrast to the lifetime risk in developed countries estimated at 1 in 4,900.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Roy Blunt \"voted to raise his own pay 12 times\" while in Congress.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Hillary Clinton opposed an individual mandate and favored an employer mandate back in 1993.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Video shows undercover FBI agent being accidentally arrested during the 2020 US protests.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "For 21 countries in Sub-Saharan Africa, \"we simply do not have data to say anything about trends in poverty.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“If every small business in our state, on average, was able to create one new job we would cut our unemployment rate in half.”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "BJP leader Subramanian Swamy exposes the Gujarat election EVM fraud 2022; He doubts the authenticity of EVMs",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says state schools superintendent candidate Don Pridemore \"voted for the largest cuts to public education in our state history\" and for \"$2.3 billion in tax breaks for corporations and the wealthy.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In early May 2021, Target announced that it would no longer sell Pokemon cards over safety concerns.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "“Says authorities found 39 children in a double wide trailer in Georgia and it's not the biggest news story in America.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The military has spent $500 million enforcing the \"Don’t Ask, Don’t Tell\" policy regarding gays and lesbians in the military.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Banks are now going to charge 173 rupees for every ATM transaction beyond the permissible limit",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Elizabeth Warren \"was paid $400,000 to teach one class.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Barack Obama's plan gives a driver's license to any illegal who wants one.",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "The president has added close to 68,000 troops in the last year, since he came into office, not just the 30,000 you hear, but the others that were added before that.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Bill Nelson \"cast the deciding vote for Obamacare cutting Medicare spending by $700 billion and letting an unelected board decide what gets covered here.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A new bill \"was written into the new health care reform initiative ensuring that Congress will be 100 percent exempt.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "And the number one killer of teens in the United States is driving while using cell phones.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Digitally altered image of traffic was originally taken in Los Angeles in 1998, not in China",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The central government confirmed reports of schools staying closed till December 2020.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Barbara Bush broke her leg in a sledding accident involving actor Arnold Schwarzenegger and her husband President George H.W. Bush in 1991.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "No, South Africa's ConCourt hasn't ruled that unmarried couples who live together for three years have same rights as couples married in community of property",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "An elderly woman trained her 65 cats to steal items, such as jewelry, from her neighbors.",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "The government is planning to ban Rs. 2,000 notes as legal tender and is willing to introduce new Rs. 1,000 notes from 01 January 2023",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "U.S. House Speaker Nancy Pelosi announced she would resign if President Donald Trump were re-elected in 2020.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Covid-19 is being used to usher in Agenda 2030 which will enslave humanity.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says a Roman statesman in 42 B.C. had a \"warning about Trump\" when he said 2,000 years ago that a nation \"cannot survive treason from within.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Sen. Kevin Cramer, R-N.D., said it’s worth losing a pregnant mother’s life if it means saving an unborn fetus.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Gangs have increased by 40 percent since this president was elected.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "A photo shows migrants coming toward the United States in May 2023",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Does This Image Show A Denver Airport Mural Of Children Wearing Face Masks That Was Painted In 1994?",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Some evidence passages entail the claim and others contradict it (NLI)."
+ },
+ {
+  "claim": "“In the past two years, democracies have become stronger, not weaker. Autocracies have grown weaker, not stronger.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": " Singapore... got its independence five years after Nigeria [and] now has a real GDP per capita of $57,722, while Nigeria's GDP per capita as at 2017 was $1,951.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Video shows people praying in a stadium during the FIFA World Cup in 2022",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Kota Allen Institute video in which students can heard and seen raising Jai Sri Ram slogans is from 2020",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Says of Mitch McConnell,\"What can happen in 30 years? A senator can become a multi-millionaire in public office.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The city of Brookhaven’s ordinance could cause the Pink Pony to close, thereby \"putting 300 Pink Pony employees out of work in this economy.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The oil price today is £96 a barrel as petrol approaches £2 per litre. In June 2008, it hit £109 a barrel yet petrol was £1.19 per litre.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A \"diaper give away event\" is set to take place in Wigan on 10 August.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Women protesting against hijabs tried to set one on fire, but got burned themselves.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The costs for families (in the individual market) for the same type of coverage that they're currently receiving would go down 14 percent to 20 percent.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A new virus named Hantavirus has emerged in China in March 2020.",
+  "gold": "False",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "In 1994, 39% of South Africans had access to electricity, today, 86% of South Africans have access to electricity.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Image shows 800 people evacuated from Afghanistan in IAF C-17",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "SOMALI MUSLIM MAN THROWS 5 YEAR OLD OFF THE THIRD FLOOR BALCONY AT MALL OF AMERICA IN MINNESOTA!",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says the Affordable Care Act has already reduced the number of uninsured in Oregon by 10 percent.",
+  "gold": "True",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A government panel that didn't include cancer specialists says women shouldn't receive mammograms until age 50...If government takes over health care, recommendations like these could become the law for all kinds of diseases.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Donald Trump Claims DC Mayor ‘Wouldn’t Let The DC Police Get Involved’ With May 29 White House Protest",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "President Obama took more money from Wall Street in the 2008 campaign than anybody ever had.",
+  "gold": "True",
+  "pred": "True",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Evidence passages entail the claim (NLI model)."
+ },
+ {
+  "claim": "Fracturing or horizontally fracturing the shale to open up larger pockets of natural gas ... has been used for over 60 years and, as of 2009, over 80,000 wells have been fracked in Ohio.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says that \"when Congressman (Steve) Cohen took office in 2007, the unemployment rate was at 4.8 percent. The unemployment rate in Shelby County has reached 9.7 percent.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Viral Post Claims All Canadian Citizens Are Entitled To $200 A Day For Staying Home During The Pandemic",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "A screenshot authentically shows that on Jan. 23, 2021, Bill Gates’ Twitter account posted, “The tracking chip was in the MAGA flags. That’s [sic] how we have been rounding up the 6th Protesters so quickly.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "MIT offers a \"pirate certificate\" to students who complete four physical education courses.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "In August 2021, Tennessee Gov. Bill Lee signed an executive order that authorized the construction of \"quarantine camps\" for individuals who refuse to be vaccinated against COVID-19.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Visuals of CBI officials thrashing Station Master Mohammad Sharif, the main accused in the Odisha train tragedy, after apprehending him from a Madrasa in West Bengal",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Of the [more than 2 million] work opportunities created, more than 1 million have been taken up by the youth.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Message claims that from June 15, 2020, Indias name will be Bharat in every language ruled the Supreme Court",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Pharmaceutical giant GlaxoSmithKline’s Covid-19 vaccine contains ingredients that will cause infertility, and that immunized men can make unvaccinated women sterile in a global depopulation effort funded by the Bill and Melinda Gates Foundation",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "interval",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ }
+]

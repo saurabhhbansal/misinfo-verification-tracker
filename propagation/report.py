@@ -11,6 +11,7 @@ from common.models import Claim, ContentBundle, Post
 from propagation import burst, search, similarity
 
 log = logging.getLogger(__name__)
+COORD_WINDOW_S = 600  # tuned on synthetic seed 7 (60-min window flagged organic viral waves); see eval/results
 
 _STOP = set("the a an and or of to in on for is are was were be this that with from by at as it its has have had "
             "will can not but you your our they he she we i".split())
@@ -76,7 +77,7 @@ def analyse(bundle: ContentBundle, claims: list[Claim]) -> dict:
         texts = [p.text for p in matches]
         mh = [similarity.minhash(t) for t in texts]
         jac = np.array([[a.jaccard(b) for b in mh] for a in mh])
-        report["clusters"] = burst.coordination(matches, jac, sim_threshold=0.8, time_window_s=3600)
+        report["clusters"] = burst.coordination(matches, jac, sim_threshold=0.8, time_window_s=COORD_WINDOW_S)
     report["level"], report["explanation"] = burst.assess(report["burst"], report["clusters"], len(matches))
 
     try:

@@ -18,6 +18,7 @@ import json
 import random
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -54,7 +55,7 @@ def mk(i, author, minutes, text):
                 published=(T0 + timedelta(minutes=minutes)).isoformat(), text=text, url=f"https://x.com/{author}/{i}")
 
 
-def scenario(message: str, pool: list[str], positive: bool, rnd: random.Random) -> list[Post]:
+def scenario(message: str, pool: list[str], positive: bool, rnd: random.Random) -> tuple[list[Post], str]:
     posts, n = [], 0
     for _ in range(rnd.randint(10, 30)):                                # unrelated background
         posts.append(mk(n, f"bg{n}", rnd.uniform(0, 43200), rnd.choice(pool)))
@@ -80,10 +81,10 @@ def scenario(message: str, pool: list[str], positive: bool, rnd: random.Random) 
         for j in range(k):
             posts.append(mk(n, f"coord{j}", start + rnd.uniform(0, window), perturb(message, rnd)))
             n += 1
-    return posts
+    return posts, kind
 
 
-def detect(message: str, posts: list[Post]) -> tuple[str, int]:
+def detect(message: str, posts: list[Post], window_s: int = 3600) -> tuple[str, int]:
     """Same logic as propagation.report.analyse, minus the network search."""
     scores = similarity.score_candidates(message, [p.text for p in posts])
     matches = [p for p, (j, c) in zip(posts, scores) if similarity.is_match(j, c)]
@@ -93,7 +94,7 @@ def detect(message: str, posts: list[Post]) -> tuple[str, int]:
     if len(matches) >= 2:
         mh = [similarity.minhash(p.text) for p in matches]
         jac = np.array([[a.jaccard(b) for b in mh] for a in mh])
-        clusters = burst.coordination(matches, jac, sim_threshold=0.8, time_window_s=3600)
+        clusters = burst.coordination(matches, jac, sim_threshold=0.8, time_window_s=window_s)
     level, _ = burst.assess(stats, clusters, len(matches))
     return level, len(matches)
 
@@ -102,6 +103,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=200)
     ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--window", type=int, default=600, help="coordination time window in seconds")
     args = ap.parse_args()
     rnd = random.Random(args.seed)
     claims = [c["claim"].strip('"') for c in
@@ -111,12 +113,15 @@ def main():
     gold, pred_high, pred_any, rows, t0 = [], [], [], [], time.time()
     for i, msg in enumerate(messages):
         positive = i % 2 == 0
-        level, n_match = detect(msg, scenario(msg, pool, positive, rnd))
+        posts, kind = scenario(msg, pool, positive, rnd)
+        level, n_match = detect(msg, posts, args.window)
         gold.append(int(positive))
         pred_high.append(int(level == "high"))
         pred_any.append(int(level in ("high", "elevated")))
-        rows.append({"positive": positive, "level": level, "matches": n_match})
-    res = {"n": len(gold), "seed": args.seed}
+        rows.append({"positive": positive, "kind": kind, "level": level, "matches": n_match})
+    res = {"n": len(gold), "seed": args.seed, "window_s": args.window,
+           "false_alarms_by_negative_kind": dict(Counter(r["kind"] for r in rows
+                                                         if not r["positive"] and r["level"] == "high"))}
     for name, p in (("coordination_flag(high)", pred_high), ("any_flag(high|elevated)", pred_any)):
         res[name] = {"precision": round(precision_score(gold, p, zero_division=0), 3),
                      "recall": round(recall_score(gold, p, zero_division=0), 3),
@@ -125,7 +130,7 @@ def main():
     res["seconds"] = round(time.time() - t0, 1)
     out = ROOT / "eval" / "results"
     out.mkdir(parents=True, exist_ok=True)
-    json.dump(res, open(out / f"propagation_synthetic_n{args.n}.json", "w"), indent=2)
+    json.dump(res, open(out / f"propagation_synthetic_n{args.n}_seed{args.seed}_w{args.window}.json", "w"), indent=2)
     print(json.dumps(res, indent=2))
 
 

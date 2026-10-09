@@ -1,0 +1,1202 @@
+[
+ {
+  "claim": "6,000 VAERS reports were deleted for being foreign entries, CDC says",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention the CDC stating that 6,000 VAERS reports were deleted as foreign entries, so the claim cannot be verified or contradicted with the given evidence."
+ },
+ {
+  "claim": "Says Travis County’s sheriff refuses to enforce 8 USC 1373.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "The provided snippets mention a policy of refusing to comply with 8 U.S.C. 1373, but they lack clear, independent verification that Travis County’s sheriff officially refuses to enforce the law."
+ },
+ {
+  "claim": "Says her congressional district has 10,000 medical-device industry jobs and 1,000 will be lost because of health-care law tax.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions the number of medical‑device industry jobs in the district or the claim that 1,000 jobs will be lost due to a health‑care law tax, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "The Congress-led Chhattisgarh government allotted 6,800 hectares of government land to Karachi-based organisation Dawat-e-Islami, to which Kanhaiya Lal's killers had ties.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources confirm the specific claim that the Congress-led Chhattisgarh government allotted 6,800 hectares to Dawat-e-Islami, nor do they refute it; the evidence only mentions plans to allot land without specifying size."
+ },
+ {
+  "claim": "Gov. Rick Perry broke his promise that he would not accept a $40,000 pay increase.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "The evidence shows Gov. Rick Perry's pay increased by over $90,000, but provides no information about any promise not to accept a $40,000 raise, so the claim cannot be verified."
+ },
+ {
+  "claim": "Says Donald Trump has written 10 checks to Hillary Clinton \"and four of those checks were not to her Senate campaign. … It was to her presidential campaign.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions Donald Trump writing checks to Hillary Clinton, nor any details about the number of checks or their purpose, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "Ronald Reagan won the 1980 presidential election in a landslide despite trailing Jimmy Carter in public opinion polls two weeks earlier, so polls cannot be trusted to predict election results.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "The evidence confirms that Reagan won the 1980 election in a landslide (E1, E2, E4, E5), but none of the sources mention him trailing Jimmy Carter in public opinion polls two weeks before the election, so that part of the claim cannot be verified."
+ },
+ {
+  "claim": "Photo shows Sri Lankan police during a drug bust operation that turned violent in Atulugama in September 2020",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions Sri Lankan police, Atulugama, a drug bust in September 2020, or a related photo, so the claim cannot be verified with the given sources."
+ },
+ {
+  "claim": "The \"working tax cut\" created \"over 40,000 new jobs in just the last four years.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided excerpts confirm that the \"working tax cut\" created over 40,000 jobs in the last four years; they either discuss different figures, unrelated policies, or job cuts."
+ },
+ {
+  "claim": "Video shows fake ₹2000 notes are being printed in the country",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "The only source (E1) merely reports that a video claiming to show fake Indian currency being printed exists, but it does not verify the video's authenticity or that it depicts ₹2000 notes; other evidence does not address the claim."
+ },
+ {
+  "claim": "Says President Barack Obama \"has an Environmental Protection Agency proposal that would raise the price of gasoline by 25 cents a gallon.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "None of the provided sources mention an EPA proposal by President Obama to raise gasoline prices by 25 cents per gallon; they discuss unrelated tax changes, fuel economy, and price history."
+ },
+ {
+  "claim": "A video shows an attack during a Black Lives Matter protest in June 2020.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources confirm that a video shows an attack during a Black Lives Matter protest in June 2020; they either discuss unrelated events or lack details about such a video."
+ },
+ {
+  "claim": "Ein Foto zeige die aktuellen Spritpreise auf Teneriffa, die in etwa zwischen 90 Cent und 1 Euro pro Liter liegen.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 reports that the average cost for a liter of 98 gasoline in Santa Cruz de Tenerife is €1.41, which is well above the claimed range of €0.90‑€1.00 per litre, directly contradicting the claim."
+ },
+ {
+  "claim": "A recent news clipping reporting the rape and murder of a 5-year-old girl at a temple on the pretext of Kanya Puja",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention a 5‑year‑old girl being raped and murdered at a temple under the pretext of Kanya Puja; they refer to other incidents involving different ages, locations, or contexts."
+ },
+ {
+  "claim": "Singapore's Ministry of Health released a list showing the day-to-day progress of COVID-19 symptoms during the first nine days of infection.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "E3 identifies the purported list as a false message that was merely attributed to Singapore's Ministry of Health, indicating the ministry did not actually release such a list."
+ },
+ {
+  "claim": "Hillary Clinton used a green screen to add fake audience members during her August 2016 speech in Nevada.",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "E1 asserts that Clinton used a green‑screened crowd at the Reno rally, while E2 and E3 state that the accusation was debunked and explain the effect as video compression, providing contradictory accounts."
+ },
+ {
+  "claim": "A teenager was killed after his Xbox One malfunctioned and forcefully ejected a disc that slashed his throat.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "No evidence independently confirms or refutes the claim; the only mention (E1) merely repeats the allegation without verification, and other sources are unrelated."
+ },
+ {
+  "claim": "Says Charlie Crist rode on a jet that \"belongs to a serial polluter with a history of environmental violations fined nearly $2 million for polluting water.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions Charlie Crist riding on a jet, a serial polluter, or a fine of nearly $2 million for water pollution, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "Says middle class taxpayers \"subsidize Walmart’s horrendously low wages to the tune of at least $6.2 billion every year.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources independently verify the $6.2 billion figure; they merely repeat the claim without official data or fact‑check confirmation."
+ },
+ {
+  "claim": "Ein E-Auto spare erst nach 127.500 Kilometern Fahrt oder 8,5 Jahren CO2-Emissionen gegenüber einem neuwertigen Benziner ein. Im Vergleich zu einem Diesel dauere es 219.000 Kilometer oder 14,6 Jahre.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions the specific break‑even distances (127,500 km or 219,000 km) or timeframes (8.5 years, 14.6 years) claimed, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "Says \"80 percent of the health care dollars are spent by 20 percent of the population.",
+  "gold": "True",
+  "pred": "Conflicting",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E2 states that Medicare Part A and B spending is distributed about 81% to the top 20% of the population, which aligns with the claim. However, E3 reports that the top decile (10%) of the population accounts for only 63.6% of medical expenditures, contradicting the 80% figure. The evidence therefore "
+ },
+ {
+  "claim": "A U.S. F-35B fighter jet flew by a Chinese vessel that fired a water cannon at two Philippine Coast Guard vessels in the West Philippine Sea in July 2023",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources confirm that a U.S. F-35B flew by a Chinese vessel that used water cannon on Philippine Coast Guard ships in July 2023, nor do they refute it."
+ },
+ {
+  "claim": "Charlie Crist allowed college tuition to increase up to 15 percent every year.",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E2 states that during the 2009 recession Crist signed a bill allowing all state colleges and universities to raise tuition up to 15% per year, confirming he permitted such increases."
+ },
+ {
+  "claim": "Prior to 1983, academic certificates were exclusively issued in handwritten format. The font utilized in Modi’s M.A certificate ‘Old English Text MT’ was invented and patented only in 1992. Additionally, the word “University” is misspelled as “Unibersity” on the certificate",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E1 states that the word 'University' is not misspelled as 'Unibersity' on the certificate, attributing the appearance to the calligraphic font, directly refuting that part of the claim."
+ },
+ {
+  "claim": "“In 1999 Lagos was generating N700 million in internally generated revenue per month.”",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 states that before the return of democracy in 1999, Lagos' internally generated revenue averaged N600 million per month, which is lower than the claimed N700 million per month."
+ },
+ {
+  "claim": "Says if Texas abortion measure passes, \"someone living in El Paso would have to drive 550 miles each way to San Antonio for something as simple as cervical cancer screening.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E2 states that breast and cervical cancer screening services are available in El Paso, meaning residents would not need to travel to San Antonio for such screening, contradicting the claim. While E4 notes the El Paso‑San Antonio distance (~561 mi), it does not establish that travel is required for s"
+ },
+ {
+  "claim": "On March 21, 2021, an adviser to former U.S. President Donald Trump said he was preparing to launch his own social media platform.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence confirms that an adviser to former President Trump said on March 21, 2021 that he was preparing to launch his own social media platform; the excerpts relate to other topics or dates."
+ },
+ {
+  "claim": "The non-partisan Congressional Budget Office concluded ObamaCare will cost the U.S. more than 800,000 jobs.",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 reports that the Congressional Budget Office testified before Congress that implementation of Obamacare would cost 800,000 jobs, directly confirming the claim."
+ },
+ {
+  "claim": "Says Erv Nelson voted \"yes on the pro-amnesty SJR 21, a bill urgingCongress to provide citizenship for those residing illegally in our country.",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E5 states that Nelson voted \"yes\" on the immigration legislation, describing his critical \"yes\" vote and enthusiasm for the bill, which aligns with the claim that he voted yes on the pro‑amnesty SJR 21."
+ },
+ {
+  "claim": "One of the interesting things about the Recovery Act was most of the projects came in under budget, faster than expected, because there's just not a lot of work there.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "None of the provided evidence addresses whether Recovery Act projects were generally under budget or completed faster than expected."
+ },
+ {
+  "claim": "A genuine email message says you've won a $500 gift card for Ulta Beauty.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions an email about winning a $500 Ulta Beauty gift card, so the claim cannot be verified or contradicted from the given sources."
+ },
+ {
+  "claim": "In a Nov. 3, 2020 interview with reporters in Wilmington, Delaware, U.S. Democratic presidential candidate Joe Biden likened his experiences playing ball with Black athletes to Stephen King’s Green Mile.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions Biden comparing his experiences playing ball with Black athletes to Stephen King’s Green Mile, nor does any source refute the claim."
+ },
+ {
+  "claim": "A CCTV footage has gone viral on social media in which two men are trashed in the DM’s office.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention a CCTV video of two men being trashed in the DM’s office; they discuss unrelated incidents such as helicopter footage, sexual assault, police riots, and other police videos."
+ },
+ {
+  "claim": "Medicare is paying hospitals $13,000 for patients admitted with COVID-19 diagnoses and $39,000 if those patients are placed on ventilators.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence includes the specific Medicare payment amounts of $13,000 for COVID‑19 admissions or $39,000 for ventilated patients, so the claim cannot be confirmed or refuted from this material."
+ },
+ {
+  "claim": "'FDA experts reveal the Covid-19 Vaccines are killing at least 2 people for every 1 life they save'",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "Multiple sources state that Covid‑19 vaccines prevented millions of deaths and that deaths caused by vaccination are extremely rare, with no evidence that vaccines kill more people than they save, directly refuting the claim that they kill at least 2 people for every 1 life saved [3][4]."
+ },
+ {
+  "claim": "Says Newt Gingrich \"has said that we should make the 11 million illegal workers that are in this country legal.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided evidence mentions Newt Gingrich discussing humane treatment of illegal immigrants and concerns about deportations, but does not contain a clear statement that he said the 11 million illegal workers should be made legal."
+ },
+ {
+  "claim": "A poll taken \"a few months ago\" found \"70 percent approval or higher\" for the Act 10 collective bargaining law.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention a poll or any approval rating for Act 10, so the claim cannot be verified with the given evidence."
+ },
+ {
+  "claim": "The transportation sales tax would cost the average consumer an estimated $112 a year.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention a transportation sales tax or an estimated cost of $112 per year for the average consumer, so the claim cannot be verified or contradicted from the given evidence."
+ },
+ {
+  "claim": "A Florida zoo employee was killed while attempting to sexually assault a 12-foot alligator.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided sources (E1, E2) only repeat the claim that a zoo employee was killed while attempting to sexually assault a 12‑foot alligator, without any independent verification or official confirmation; no evidence confirms or refutes the event."
+ },
+ {
+  "claim": "Says Hillary Clinton’s approval rating went from 70 percent to 52 percent in 18 months.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources contain information about Hillary Clinton's approval rating changing from 70% to 52% over any period, so the claim cannot be verified with the given evidence."
+ },
+ {
+  "claim": "[In 2014-2015] coverage for the rotavirus vaccine exceeded the 95% target and the pneumococcal vaccine reached 91.5%.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided evidence does not contain specific data confirming that rotavirus vaccine coverage exceeded 95% or that pneumococcal vaccine coverage reached 91.5% in 2014‑2015."
+ },
+ {
+  "claim": "Again, DON'T share this photo of a 10-year-old girl in Kenya. Mother warns of emotional damage",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources confirm that a mother warned against sharing a photo of a 10‑year‑old Kenyan girl, nor do they refute such a warning; the evidence only mentions a photo and unrelated topics."
+ },
+ {
+  "claim": "“CDC quietly deletes 6,000 COVID vaccine deaths from its CDC website total in one day.”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources confirm that the CDC deleted 6,000 COVID vaccine deaths from its website in a single day; the excerpts discuss unrelated topics or general data removals, not the specific claim."
+ },
+ {
+  "claim": "Text Message Falsely Claims The Federal Government Plans To Institute 30 Days Of Martial Law To Curb The Spread Of Coronavirus",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence discusses a text message claiming the federal government will institute 30 days of martial law to curb COVID-19, nor does any source confirm or refute such a claim."
+ },
+ {
+  "claim": "The default rate for college students has grown from 40 percent 10 years ago to about 50 percent today, and \"perhaps as many as 800,000 young Ohioans are facing default on their student loans.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 reports that in 2014 only 15.7% of Ohio borrowers were in default, far below the claimed 40% ten years ago and does not support a rise to 50% today or 800,000 defaults. No evidence confirms the claim."
+ },
+ {
+  "claim": "Flu caused more deaths in the UK than Covid-19 did between 19 June and 31 July.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "None of the provided sources give death counts for flu or Covid-19 specifically between 19 June and 31 July, so the claim cannot be confirmed or refuted with the available evidence."
+ },
+ {
+  "claim": "There are more African American men in prison, jail, on probation or parole than were enslaved in 1850.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "The evidence mentions that 872,924 Black men were enslaved in 1850 and asserts that adding probation and parole numbers today would exceed that figure, but it does not provide independent data on the current total of African‑American men in prison, jail, probation or parole to verify the claim."
+ },
+ {
+  "claim": "Irish midget accused of posing as a leprechaun to extort sex from 26 women in exchange for pot of gold",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention an Irish midget accused of posing as a leprechaun, extorting sex from 26 women, or offering a pot of gold; the evidence only references unrelated topics such as arrests of a criminal group, a museum skeleton, and other unrelated items."
+ },
+ {
+  "claim": "Foot Locker donated $200 million to Black Lives Matter",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 shows Foot Locker pledged $200 million for internal programs benefiting Black employees and customers, not a donation to Black Lives Matter, and E3 indicates only about $26 million in grants to various groups with no $200 million to BLM, contradicting the claim."
+ },
+ {
+  "claim": "Says Massachusetts has three state-mandated student tests and Finland just one.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 confirms Finland has one major standardized test, but none of the provided evidence specifies the number of state‑mandated student tests in Massachusetts, so the claim cannot be verified."
+ },
+ {
+  "claim": "Says combined inflation and unemployment rates in October 2011 were the highest since Ronald Reagan succeeded Jimmy Carter.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "None of the provided evidence mentions October 2011 inflation or unemployment rates, nor compares them to the period after Reagan succeeded Carter, so the claim cannot be verified."
+ },
+ {
+  "claim": "Newspaper clipping stating Nepal recently occupied 7100 acres of Indian territory",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention Nepal occupying 7,100 acres of Indian territory, nor do they confirm or deny such a claim."
+ },
+ {
+  "claim": "According to International Olympic Committee data, “an average of 29 athletes under the age of 35 suffered sudden death per year from 1966 to 2004. From March 2021 to March 2022, 769 athletes have died or suffered cardiac arrest.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence confirms or contradicts the specific IOC figures cited in the claim; the excerpts do not contain the stated average of 29 deaths per year or the 769 deaths from March 2021 to March 2022."
+ },
+ {
+  "claim": "Last year, we had zero percent growth in GDP in Virginia ...The only states that did worse than us were Alaska and Mississippi.",
+  "gold": "True",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E1 reports that Alaska's economic growth was higher than the U.S. overall, indicating Alaska did not have worse GDP growth than Virginia's reported zero percent, contradicting the claim that only Alaska and Mississippi did worse."
+ },
+ {
+  "claim": "The Trump campaign has unveiled its 2020 campaign strategy of airing unedited footage of speeches and press conferences by far-left Democrats.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions the Trump campaign's strategy of airing unedited footage of far-left Democrats, so the claim cannot be verified or contradicted from the given sources."
+ },
+ {
+  "claim": "A video shared on July 5, 2023, authentically showed the biggest library in France being burned down by protesters.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions a video of the biggest library in France being burned, its authenticity, or a July 5, 2023 sharing date, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "HR 6666 Would NOT Ban Anyone Not Vaccinated For COVID-19 From Churches, Schools, Medical Buildings That Get Money From The Bill",
+  "gold": "False",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "E1 states there are currently no plans to place restrictions on those who refuse a COVID‑19 vaccine, which aligns with the claim that HR 6666 would not ban unvaccinated individuals from churches, schools, or medical buildings receiving funding."
+ },
+ {
+  "claim": "“South Africa was the first African country to legalise same-sex marriages back in 2006. It was the fifth country in the world to take this bold step.”",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "Multiple sources state that South Africa was the first African nation and the fifth worldwide to legalise same‑sex marriage, with the change occurring in 2006 (e.g., E3 notes it was the fifth after the Netherlands, Belgium, Spain and Canada and that the court ruling came in 2005 leading to legislati"
+ },
+ {
+  "claim": "Says the state of Maryland issued these Independence Day 2020 safety guidelines.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions the state of Maryland, Independence Day, or 2020 safety guidelines, so the claim cannot be verified or contradicted."
+ },
+ {
+  "claim": "A study performed at the Los Alamos National Laboratory found that millimeter wave body scanners commonly used by airport security can alter your DNA.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "The only mention of a Los Alamos study (E1) merely repeats the claim that such a study found DNA damage, without independent verification or a source confirming the study’s existence or results; other evidence is unrelated."
+ },
+ {
+  "claim": "We have given priority to clean energy, (geothermal, wind power, solar and hydro), which now accounts for over 75% of the installed capacity compared to the world average of only 24%.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E2 shows clean energy (hydro, wind, solar) makes up only about 13% of total installed capacity (2,079 MW of 16,384 MW), far below the claimed >75% and does not support a world average of 24%."
+ },
+ {
+  "claim": "President Trump issued an order authorizing the U.S. Treasury to freeze the assets of two former First Families, the Obamas and Clintons.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the supplied sources mention President Trump issuing an order to freeze the assets of the Obamas or Clintons; the evidence discusses unrelated executive orders and actions."
+ },
+ {
+  "claim": "Rick Scott tried to slash school funding by $3.3 billion.",
+  "gold": "True",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The evidence cites a $1.3 billion cut to K‑12 education (E2) and notes that Scott initially proposed a larger cut but does not mention a $3.3 billion figure (E5). No source confirms a $3.3 billion school‑funding slash, contradicting the claim."
+ },
+ {
+  "claim": "Mark Kelly \"voted to allow prison inmates to receive stimulus checks five separate times.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention Mark Kelly or his voting record on stimulus checks for inmates, so the claim cannot be verified or contradicted from the given evidence."
+ },
+ {
+  "claim": "Vitamin K shots are poisonous because they contain polysorbate 80 as “main active ingredient” that has “strong links with infertility, with autoimmune issues”",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The evidence states there is no biologically plausible way for polysorbate 80 to cause infertility (E2) and that a 10 mg/kg dose did not affect fertility in studies (E4). No source confirms polysorbate 80 is the main active ingredient in vitamin K shots. This directly opposes the claim."
+ },
+ {
+  "claim": "In 1962, Joe Biden “worked with segregationists,” Elizabeth Warren “debated as a pro-Vietnam conservative” while Bernie Sanders “organized against segregation and Vietnam war”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E1 shows a 1962 photo used by Sanders' campaign of a sit‑in against segregated housing, supporting the part about Sanders organizing against segregation, but none of the evidence addresses Biden working with segregationists or Warren debating as a pro‑Vietnam conservative, so the overall claim canno"
+ },
+ {
+  "claim": "About 60% of unemployed youth aged below 35 years have never worked.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources give a specific figure that about 60% of unemployed youth under 35 have never worked; they only mention that many unemployed youth have never worked without quantifying, so the claim cannot be verified."
+ },
+ {
+  "claim": "We’re only spending 2 percent of our GDP on our infrastructure, while China and India are spending 10 percent of their GDP reinvesting back into their country.",
+  "gold": "True",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "Evidence shows US capital spending by state and local governments peaked at about 3% of GDP, not the 2% claimed, and provides no data supporting a 10% GDP investment by China or India."
+ },
+ {
+  "claim": "Are conservationists dyeing elephant tusks and rhino horns pink? No – photos have been digitally altered",
+  "gold": "False",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "E1 states that attempts to dye rhino horns and elephant tusks pink were not successful, experts do not recommend the method, and the viral photos were digitally altered, confirming the claim that conservationists are not dyeing them pink and the images are fake."
+ },
+ {
+  "claim": "Shehbaz Sharif congratulated Congress for winning the Karnataka elections and said the two 'will work for the strengthening of Islam in India'.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention Shehbaz Sharif, a congratulatory message to Congress, or any statement about strengthening Islam in India, so the claim cannot be verified or contradicted from the given evidence."
+ },
+ {
+  "claim": "”To date, 385 public entities have been registered in the portal, and 5,236 contracts published valued at Ksh 146.5 billion.”",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions the number of public entities registered, the count of contracts published, or the total contract value of Ksh 146.5 billion, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "The director of Al Jazeera Palestine pleads with Israeli army to wait for ten minutes before the air strike on their office in Gaza",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions the Al Jazeera Palestine director, a plea to the Israeli army, or a ten‑minute delay before an air strike on their Gaza office, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "We have the lowest percentage of Americans working today of any year since 1977.",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E1 states that a 62.6% employment rate is the lowest since October 1977, directly confirming the claim that the current percentage of Americans working is the lowest for any year since 1977."
+ },
+ {
+  "claim": "Since 1947, India has been paying 10 billion rupees pension to Queen Elizabeth ; India is bound to give 30 thousand tons of Beef every year to Britain",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided evidence only contains vague mentions of the claim without any independent verification or authoritative data confirming the pension payment or beef export obligation."
+ },
+ {
+  "claim": "Facebook posts that list more than 30 reasons in the world economy as to \"why Ukraine matters\" contain accurate data.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources discuss Facebook posts that list more than 30 economic reasons why Ukraine matters, nor assess their accuracy."
+ },
+ {
+  "claim": "12,000 Doctors Just Urged the FDA to Put Cancer Warnings on Cheese",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided evidence mentions a physicians committee urging the FDA to place cancer warnings on cheese, but it does not give any figure of 12,000 doctors making the request. No source confirms or refutes the specific number claimed."
+ },
+ {
+  "claim": "No evidence authorities found US$27 billion belonging to dead Nigerian",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided excerpts mention authorities finding or failing to find US$27 billion belonging to a dead Nigerian; the texts discuss unrelated topics such as scams, remittances, and other matters."
+ },
+ {
+  "claim": "The Philippines handpicked the panel members in the arbitration panel that decided in July 2016 on the South China Sea maritime dispute with China.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention how the arbitration panel members were selected or that the Philippines handpicked them, so the claim cannot be verified from the given evidence."
+ },
+ {
+  "claim": "A 12-year-old girl livestreamed her suicide by hanging.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "The only evidence (E1, E2) merely reports that a 12‑year‑old girl livestreamed her suicide, without independent verification or official confirmation, which according to the guidelines does not count as support."
+ },
+ {
+  "claim": "Elected officials draw (legislative redistricting) maps. That’s it.",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "Evidence shows that in many states the legislature (elected officials) draws legislative redistricting maps (e.g., E2, E3, E5), but also notes that some states use independent or advisory commissions to draw maps (E3, E5). Thus the claim that only elected officials draw the maps is not universally a"
+ },
+ {
+  "claim": "Says Kevin Cramer voted to let insurance companies go back to denying coverage for 300,000 North Dakotans with pre-existing conditions.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The only reference to Cramer (E1) is a claim that he voted to let insurers deny coverage, but it does not provide independent verification of the vote; the other excerpts (E2‑E5) are unrelated to Cramer or the 300,000 figure. No source confirms or refutes the claim."
+ },
+ {
+  "claim": "In Shirsal village of Beed district, lava was seen coming out of the ground when bore well was drilled for 1200 feet",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "The only mention of lava in Shirsal village comes from a sensational snippet that merely reports the claim without independent verification, and no other evidence confirms or refutes it."
+ },
+ {
+  "claim": "Drivers of non-electric vehicles will be fined £12 every time they drive past a ULEZ camera.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 states that ULEZ cameras charge a daily fee of £12.50 (about $16) for non‑compliant vehicles, not a £12 fine each time a vehicle passes a camera, contradicting the claim."
+ },
+ {
+  "claim": "“Last year alone, 10 million fell ill from TB and 1.5 million died. ... Why don’t we wear masks for TB?”",
+  "gold": "Conflicting",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E1 reports that last year 10.6 million people fell ill with TB and 1.6 million died, which aligns with the claim’s figures of roughly 10 million cases and 1.5 million deaths."
+ },
+ {
+  "claim": "Installed capacity has increased from 1,768 MW in March 2013 to the current 2,712 MW.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "None of the provided evidence mentions the specific figures of 1,768 MW in March 2013 or a current capacity of 2,712 MW, so the claim cannot be confirmed or refuted."
+ },
+ {
+  "claim": "31 Rohingya who won West Bengal elections chanted 'Pakistan zindabad'",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions Rohingya, West Bengal elections, or a group of 31 individuals chanting 'Pakistan zindabad', so the claim cannot be verified or contradicted from the given sources."
+ },
+ {
+  "claim": "A German football club was banned from playing games outside Germany in 1934, after they failed to give a Nazi salute.",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "E1 states that the Karlsruhe football club was prohibited from playing in 1934 because they failed to give the Nazi salute before a match in France, and E2 confirms the same incident and the 12‑month ban."
+ },
+ {
+  "claim": "She \"led the fight to stop health insurance rate hikes and saved Rhode Island families over $150 million.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence confirms or refutes the claim that she led a fight to stop health insurance rate hikes and saved Rhode Island families over $150 million."
+ },
+ {
+  "claim": "Leni Robredo will spend time in jail after the Commission on Audit flagged her old office, the Office of the Vice President, in its 2021 audit report.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "The provided evidence does not contain any information about the Commission on Audit flagging the Office of the Vice President, nor any mention of Leni Robredo facing jail time."
+ },
+ {
+  "claim": "Photo of person holding sign shows the shooter who killed six people at a Nashville, Tennessee, school.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "The provided evidence mentions the shooting and people holding signs, and a photo of a person identified as the assailant, but none confirm that a photo of a person holding a sign depicts the shooter who killed six people."
+ },
+ {
+  "claim": "Juliane Koepcke survived 10 days alone in the Amazon rainforest after falling nearly two miles during a plane crash.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources confirm the specific details of Juliane Koepcke surviving 10 days alone or falling nearly two miles; the evidence either mentions her survival in general (E1) or is unrelated (E2‑E5)."
+ },
+ {
+  "claim": "“We made more progress [with North Korea] in that four or five months than they’ve made in 70 years.”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "None of the provided evidence contains the quoted statement or any verification of the claim about progress with North Korea over four or five months versus 70 years."
+ },
+ {
+  "claim": "PayPal ‘reinstated’ a fine of $2500 for spreading misinformation",
+  "gold": "False",
+  "pred": "Conflicting",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "E3 reports that PayPal is \"back with its $2500 penalty\" for misinformation, supporting the claim, while E1 notes PayPal backtracked on the policy and E4 states the ban was not reinstated, contradicting it."
+ },
+ {
+  "claim": "Only two Coca-Cola executives know Coke's formula, and each of them knows only half of it.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "Evidence indicates that many Coca‑Cola employees, such as accountants and other staff, likely know the ingredients and possibly proportions, contradicting the claim that only two executives know the formula and each only half of it. [2]"
+ },
+ {
+  "claim": "“Bill Gates admits his COVID-19 vaccine might kill nearly 1 million people.”",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided sources show Bill Gates denying conspiracy claims and do not contain any admission that his COVID‑19 vaccine could kill nearly one million people; instead they refute such statements (e.g., E2 reports Gates denied conspiracy allegations)."
+ },
+ {
+  "claim": "You can make a substance that removes body hair by mixing one tablespoon of 2% iodine and one cup of baby oil.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "The provided evidence only mentions the mixture recipe but does not provide independent verification of its effectiveness for hair removal, nor does any source refute it."
+ },
+ {
+  "claim": "This is what President Obama said the jobless rate would be if we passed the stimulus: 5.6 percent.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources contain a statement from President Obama claiming the jobless rate would be 5.6% if the stimulus passed; they only discuss unemployment figures or general stimulus effects."
+ },
+ {
+  "claim": "Video shows infant rescued in India, not Morocco post 2023 earthquake",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence addresses the claim that a video shows an infant rescued in India rather than Morocco after the 2023 earthquake."
+ },
+ {
+  "claim": "In September 2021, Norway lifted coronavirus-related restrictions after health officials reclassified COVID-19 as a less severe disease comparable to the flu.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "The provided evidence does not mention Norway, September 2021, or any reclassification of COVID-19 as comparable to the flu, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "Says \"Harry Reid has a better voting attendance record than these three Congressmen!",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "The provided evidence contains no information about Harry Reid's voting attendance record or that of any other Congressmen, so the claim cannot be assessed."
+ },
+ {
+  "claim": "Man puts on his terrace 70 fake plants of weed to taunt the police",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions a man placing 70 fake weed plants on his terrace to taunt police, so the claim cannot be verified or contradicted from the given sources."
+ },
+ {
+  "claim": "So the number on DACA is 800,000, but every one person can bring in their entire extended family once they reach a certain status. So it's 3 or 4 million, right?",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "Evidence shows the number of active DACA recipients is about 580,000 (E4), not 800,000, and DACA does not grant the ability for recipients to bring extended family; the only family connections noted are 250,000 citizen children (E3) and 1.5 million people sharing a home (E1)."
+ },
+ {
+  "claim": "Raising the minimum wage to $10.10 an hour, \"would help lift over a million Americans out of poverty.",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "Evidence E4 states that raising the federal minimum wage to $10.10 an hour could lift nearly 5 million Americans out of poverty, which exceeds the claim of \"over a million\" and thus supports it. E2 also notes that raising to $10.10 would reduce poverty, reinforcing the claim."
+ },
+ {
+  "claim": "President John F. Kennedy proclaimed that \"nobody can stop an assassination\" just before he was shot and killed in 1963.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources contain the alleged quote or confirm that Kennedy said it; they only mention the assassination in general."
+ },
+ {
+  "claim": "Video of two children helping a handicapped man to fix the problem in his tricycle",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions a video of two children assisting a handicapped man with a tricycle, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "Anheuser-Busch will give away free beer when 70% of the nation's adults have had at least one COVID-19 vaccine shot.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided excerpts confirm that Anheuser‑Busch will give away free beer specifically when 70% of adults have received at least one COVID‑19 vaccine dose, nor do they refute it."
+ },
+ {
+  "claim": "This video shows the Indian cricket captain Virat Kohli asking his Afghan counterpart Mohammad Nabi to choose bowling after the latter won the toss in the match held on November 3 between the two countries in the T20 World Cup 2021. This is evidence of match-fixing between India and Afghanistan.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions a video of Virat Kohli asking Mohammad Nabi to choose bowling, nor does it address any alleged match-fixing between India and Afghanistan."
+ },
+ {
+  "claim": "Gang initiates planned to kill 30 or more women around Halloween 2008.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "The provided sources mention that the Bloods had flyers describing a Halloween gang initiation plot (E1) but give no details on a plan to kill 30 or more women in 2008, nor any evidence confirming or denying such a plan."
+ },
+ {
+  "claim": "Our county now has the fastest growing airport in America, attracting nearly 1,000 new private sector jobs.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "None of the provided sources confirm that the county's airport is the fastest‑growing in America or that it has created nearly 1,000 new private‑sector jobs; the excerpts discuss general industry growth, cargo traffic, or other airports without supporting the claim."
+ },
+ {
+  "claim": "Netflix announced in April 2017 that it was creating a new 'Harry Potter' television series.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention Netflix announcing a Harry Potter TV series in April 2017; they discuss unrelated topics or different dates, so the claim cannot be verified or contradicted from the given evidence."
+ },
+ {
+  "claim": "When one person sneezes, it goes all the way through the aircraft.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources discuss how far a sneeze travels inside an aircraft; they address boarding, droplet distance of a few meters, or unrelated crash details, so the claim cannot be verified or contradicted from this evidence."
+ },
+ {
+  "claim": "There are so many loopholes ... our businesses pay effectively one of the lowest tax rates in the world.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "The evidence mentions tax loopholes (E1, E2, E4) and a flat 21% corporate tax rate (E5), but none provide a comparison showing that businesses pay one of the lowest tax rates in the world, so the claim cannot be verified from the given sources."
+ },
+ {
+  "claim": "Sudha Murty spends one day every year selling vegetables.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources confirm that Sudha Murty spends one day each year selling vegetables; they only mention a single instance or unrelated information."
+ },
+ {
+  "claim": "Says she \"oversaw an audit that won the city $2 million in franchise fees.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources confirm that she oversaw an audit that resulted in $2 million in franchise fees for the city; the excerpts discuss audit objectives, franchise fee rules, or unrelated topics without mentioning the $2 million figure or her role."
+ },
+ {
+  "claim": "Jules Bailey \"was instrumental in creating the Business Energy Tax Credit that let companies like Wal-Mart profit by $11 million while costing the Oregon general fund $33 million.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence confirms that Jules Bailey created the Business Energy Tax Credit, nor that it let Wal‑Mart profit $11 million while costing Oregon $33 million; the sources either discuss his role in reforming the credit or unrelated tax matters."
+ },
+ {
+  "claim": "Says area near proposed northern Wisconsin iron ore mine is \"15 hours away\" from where public hearing on mining was held.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "The provided evidence does not contain any information about travel time or distance between the area near the proposed northern Wisconsin iron ore mine and the location of a public hearing, so the claim cannot be verified."
+ },
+ {
+  "claim": "Prior to Obamacare here in Wisconsin, 95 percent of Wisconsinites were covered by insurance. After Obamacare, 95 percent of Wisconsinites were covered by insurance. It hasn’t had an impact.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence gives data on Wisconsin's insurance coverage rates before or after the ACA, so the claim cannot be confirmed or refuted."
+ },
+ {
+  "claim": "Says his state budget will \"provide an increase in state funding\nfor the 2011-12 school year.",
+  "gold": "True",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "Evidence shows the 2011 state budget slashed $5.4 billion in public‑education funding, indicating a decrease rather than an increase for the 2011‑12 school year [5]."
+ },
+ {
+  "claim": "Francisco Domagoso admitted he squandered 70 million pesos in a video",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention Francisco Domagoso admitting to squandering 70 million pesos, nor do they reference a video or that specific amount."
+ },
+ {
+  "claim": "In July 2021, a 10-year-old in Colorado died from causes associated with the plague, a disease caused by the bacteria Yersinia pestis.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "None of the provided sources confirm a July 2021 plague death of a 10‑year‑old in Colorado, nor do they refute it; the evidence only gives general information about plague or unrelated cases."
+ },
+ {
+  "claim": "Liking and sharing a post will get you £35 of free food from Iceland.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources confirm that liking and sharing a post will give £35 of free food from Iceland, nor do they refute it."
+ },
+ {
+  "claim": "Tom Ganley supports a 23 percent national sales tax that would raise taxes on the middle class while giving a huge tax break to millionaires like himself.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence links Tom Ganley to supporting a 23% national sales tax or describes its impact on middle‑class taxpayers and millionaires."
+ },
+ {
+  "claim": "When I left Washington, we had a $5 trillion surplus.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "Evidence shows the largest reported surplus was $236.2 billion when President Clinton left office [1], far short of a $5 trillion surplus, and other sources discuss borrowing $1.37 trillion from Social Security surplus, not a $5 trillion surplus [E2,E5]."
+ },
+ {
+  "claim": "The percentage of black children born without a father in the home has risen from 7 percent in 1964 to 73 percent today, due to changes from President Lyndon Johnson’s Great Society.",
+  "gold": "False",
+  "pred": "False",
+  "method": "llm",
+  "taxonomy": "comparison",
+  "rationale": "E1 reports that today only 44% of Black children have a father in the home (implying 56% fatherless) and that the out‑of‑wedlock birth rate was 24.5% in 1964, not 7%. E2 and E4 give figures around 67% fatherless, not the claimed 73%, and none attribute the change to Johnson’s Great Society. These fi"
+ },
+ {
+  "claim": "When career politician Daniel Webster became speaker of the House, he wasted $32,000 of our money on a spiral staircase for his office.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions Daniel Webster, his tenure as speaker, a spiral staircase, or a $32,000 expense, so the claim cannot be verified or contradicted from the given sources."
+ },
+ {
+  "claim": "Democrats pledged to \"force all North Carolinians into a single-payer health insurance scheme\" that would cost $72 billion.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention a Democratic pledge, a North Carolina single‑payer plan, or a $72 billion cost; they only discuss broader national cost estimates and Medicaid expansion."
+ },
+ {
+  "claim": "80 doctors who received Covid-19 shots died in last 60 days",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources report that 80 doctors who received Covid‑19 vaccines died in the last 60 days; they discuss overall death counts, unrelated vaccine data, or other topics, offering no confirmation or refutation of the claim."
+ },
+ {
+  "claim": "In a letter addressed to the UP CM Yogi Adityanath, Union Home minister Amit Shah said maximising Covid-19 vaccination registrations can ensure success in the 2022 assembly election.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "interval",
+  "rationale": "None of the provided sources mention a letter from Amit Shah to Yogi Adityanath, nor any statement about maximising Covid‑19 vaccination registrations to ensure election success."
+ },
+ {
+  "claim": "A photograph shows a 9-year-old girl who was impregnated by a Muslim man.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided excerpts confirm the existence of a photograph depicting a 9-year-old girl impregnated by a Muslim man, nor do they refute it; the evidence is unrelated or incomplete."
+ },
+ {
+  "claim": "Video of four sadhus beaten up is related to child kidnapping in Sangli, Maharashtra",
+  "gold": "False",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "E1 notes that the sadhus were under suspicion of kidnapping children, and E2 reports that a video of the sadhus being beaten went viral, linking the incident to the broader child‑kidnapping rumors in Sangli, Maharashtra."
+ },
+ {
+  "claim": "In May 2021, U.S. President Joe Biden's administration announced it would waive some sanctions on the corporate entity and CEO overseeing the construction of Russia’s Nord Stream 2 pipeline into Germany.",
+  "gold": "True",
+  "pred": "True",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "Reuters reports on May 19, 2021 that the Biden administration waived sanctions on the company behind Nord Stream 2 and its chief executive, confirming the claim that in May 2021 the administration announced such waivers."
+ },
+ {
+  "claim": "Say Portland Public Schools' central administration makes up less than 4 percent of the staff.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources give data on the proportion of central‑administration staff within Portland Public Schools; they only mention administrative costs as a percentage of revenue, which does not address staff composition."
+ },
+ {
+  "claim": "During an interview broadcast on March 16, 2021, U.S. President Joe Biden said \"don't come\" to migrants considering trips to the U.S.-Mexico border to seek asylum in America.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided sources mention a March 16 2021 interview or a statement by President Biden telling migrants \"don't come\"; the evidence only discusses unrelated policies in later years."
+ },
+ {
+  "claim": "“This is striking: 50% of households that claim State & Local Tax deduction make under $100K — & now @SpeakerRyan wants to throw it away.”",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources give data on the income distribution of households claiming the state and local tax deduction, so the claim that 50% earn under $100 K cannot be verified from the evidence."
+ },
+ {
+  "claim": "US authorities found 39 missing children in a double-wide trailer in Georgia",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided sources mention a discovery of 39 missing children in a double‑wide trailer in Georgia; they only discuss general statistics on missing children in the United States."
+ },
+ {
+  "claim": "President Trump is asking everyone to forward this email… The TRUMP Rules: Congressional Reform Act of 2017.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "The provided sources only report that Trump allegedly asked supporters to forward an email, but none independently confirm the request; there is no verification or contradiction."
+ },
+ {
+  "claim": "The video shows a Hindu priest getting caught with two women by people in India.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Today, there are more Hoosiers going to work than ever before in the 200-year history of the great state of Indiana.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Says Sarah Huckabee Sanders tweeted, “It’s ‘odd’ that the ANTIFA insurgency happened just as COVID-19 loses steam It’s ‘odd’ that COVID-19 happened the moment impeachment failed. It’s ‘odd’ that impeachment happened the moment Russian hoax failed. The Russian hoax happened because Hillary lost? Notice the pattern?”",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "For every 25 men brought to trial for rape, 24 will walk free...",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "GHS10 million out of the whopping GHS436, 540,000 to be collected from CST has been allocated to the Cyber Security Authority",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "statistical",
+  "rationale": "None of the provided evidence mentions GHS10 million, GHS436,540,000, CST collections, or allocation to the Cyber Security Authority, so the claim cannot be verified."
+ },
+ {
+  "claim": "Manhattan District Attorney Alvin Bragg closed down New York City, called up 38,000 New York police officers and is spending an estimated $200 million in city funds as part of thearraignment of former President Donald Trump.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The National Science Foundation awarded $700,000 to fund a climate change musical.",
+  "gold": "True",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "Image shows farmers protest in Haryana held on September 10, 2020, against three agriculture ordinances passed by the Central government.",
+  "gold": "Conflicting",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "temporal",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "The Trump administration “added over 209,000 jobs, including 16,000 new manufacturing jobs, to Pennsylvania over the last three years.",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "Police report shows “massive 2020 voter fraud uncovered in Michigan.”",
+  "gold": "False",
+  "pred": "False",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Evidence passages contradict the claim (NLI model)."
+ },
+ {
+  "claim": "We moved 100 times as many people out of poverty as moved out when President (Ronald) Reagan was in office, with 40 percentmore jobs.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "comparison",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "The previous administrations combined issued 6 million title deeds to Kenyans in five [50] years; in the last seven years my administration has issued 5.1 million title deeds.",
+  "gold": "Conflicting",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ },
+ {
+  "claim": "One of the men arrested in relation to the Bengaluru communal riots had gone out to buy coriander leaves at 1 am in the midnight.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "llm",
+  "taxonomy": "temporal",
+  "rationale": "None of the provided evidence mentions Bengaluru communal riots, arrests related to them, or any detail about a man buying coriander leaves at 1 am."
+ },
+ {
+  "claim": "Media outlets reported that the same boy died 3 times from the coronavirus, in 3 countries.",
+  "gold": "False",
+  "pred": "Unverifiable",
+  "method": "nli",
+  "taxonomy": "statistical",
+  "rationale": "Related articles were found but none clearly confirms or refutes the claim."
+ }
+]

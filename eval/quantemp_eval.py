@@ -74,6 +74,8 @@ def main():
         claim = Claim(text=c["claim"].strip('"'))
         ev = retrieve.rerank(claim, evidence_for(e), top_k=args.top_k, min_rel=0.0)
         v = verify.verify(claim, ev)
+        if args.method == "llm":
+            time.sleep(2.2)  # Groq free tier: 30 requests/min
         rows.append({"claim": claim.text, "gold": c["label"], "pred": MAP[v.label], "method": v.method,
                      "taxonomy": c.get("taxonomy_label"), "rationale": v.rationale[:300]})
         if i % 25 == 0:
@@ -98,6 +100,7 @@ def main():
         "confusion_matrix": {"labels": LABELS + ["Unverifiable"],
                              "matrix": confusion_matrix(gold, pred, labels=LABELS + ["Unverifiable"]).tolist()},
         "report": classification_report(gold, pred, labels=LABELS, zero_division=0, output_dict=True),
+        "verdict_methods": dict(Counter(r["method"] for r in rows)),  # 'nli'/'none' in an llm run = LLM call failed
         "seconds": round(time.time() - t0, 1),
     }
     OUT.mkdir(parents=True, exist_ok=True)
