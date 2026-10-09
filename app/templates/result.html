@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block title %}Check {{ c.id }} — Misinformation Tracker{% endblock %}
+{% block content %}
+<section class="head">
+  <div class="muted small">Check {{ c.id }} · {{ c.created_at|date }} · {{ c.platform }}</div>
+  <h1 class="url"><a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.url|truncate(90) }}</a></h1>
+  {% if c.status in ["queued", "running"] %}
+  <div class="progress" id="progress" data-id="{{ c.id }}"><span class="spinner"></span> <b id="stage">{{ c.stage }}</b>
+    <div class="muted small">Video checks take 1–5 minutes on a laptop CPU. This page updates by itself.</div></div>
+  {% elif c.status == "error" %}
+  <div class="alert"><b>{{ c.stage }}.</b> {{ c.error }}
+    {% if c.platform in ["instagram", "reddit", "facebook"] or "login" in (c.error or "") %}
+    <div class="small mt">Tip: download the post yourself and use <a href="/">Upload a file</a>.</div>{% endif %}</div>
+  {% endif %}
+</section>
+
+{% set ct = c.content %}
+{% if ct %}
+<section class="card">
+  <h2>Post</h2>
+  <div class="meta">
+    {% if ct.title %}<div><b>{{ ct.title }}</b></div>{% endif %}
+    <div class="muted small">{{ ct.author or "unknown author" }}{% if ct.published %} · {{ ct.published|date }}{% endif %}
+      {% for k, v in (ct.stats or {}).items() %}{% if v is not none %} · {{ k.replace("_count", "s").replace("_", " ") }}: {{ "{:,}".format(v) }}{% endif %}{% endfor %}</div>
+  </div>
+  {% for n in ct.notes %}<div class="note small">{{ n }}</div>{% endfor %}
+  <details><summary>Extracted text</summary>
+    {% if ct.caption %}<h4>Caption / post text</h4><p class="pre">{{ ct.caption|truncate(3000) }}</p>{% endif %}
+    {% if ct.transcript %}<h4>Speech transcript ({{ ct.transcript_lang }})</h4><p class="pre">{{ ct.transcript|truncate(4000) }}</p>{% endif %}
+    {% if ct.ocr_lines %}<h4>On-screen text (OCR)</h4><p class="pre">{{ ct.ocr_lines|join("\n")|truncate(2000) }}</p>{% endif %}
+  </details>
+</section>
+{% endif %}
+
+{% if c.claims is not none %}
+<section>
+  <h2 class="sec">Claims <span class="muted small">{{ summary.n }} found
+    {% if c.meta %}· extraction: {{ c.meta.claim_method }} · verification: {{ c.meta.verify_method }}{% endif %}</span></h2>
+  {% if summary.n %}
+  <div class="tally">{% for l in ["contradicted", "conflicting", "supported", "unverifiable"] %}{% if summary.counts[l] %}<span class="pill {{ l }}">{{ summary.counts[l] }} {{ l }}</span>{% endif %}{% endfor %}</div>
+  {% elif c.status == "done" %}<p class="muted">No checkable factual claims (numbers, dates, attributions, named facts) were found.</p>{% endif %}
+
+  {% for r in c.claims %}{% set v = r.verdict %}
+  <article class="claim {{ v.label }}">
+    <div class="claim-top">
+      <span class="pill {{ v.label }}">{{ v.label|label_text }}</span>
+      <span class="muted small">{{ r.claim.kind }} · from {{ r.claim.source }}{% if v.confidence %} · confidence {{ "%.0f"|format(v.confidence * 100) }}%{% endif %} · {{ v.method }}</span>
+    </div>
+    <p class="ctext">“{{ r.claim.text }}”</p>
+    {% if r.claim.text_en and r.claim.text_en != r.claim.text %}<p class="muted small">English: {{ r.claim.text_en }}</p>{% endif %}
+    <p class="why">{{ v.rationale }}</p>
+    {% if v.numeric_note %}<p class="small num">🔢 {{ v.numeric_note }}</p>{% endif %}
+    {% if v.evidence %}
+    <ol class="evidence">
+      {% for e in v.evidence %}<li><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title or e.url }}</a>
+        <span class="tag {{ e.source_type }}">{{ e.source_type }}</span>
+        <span class="muted small">{{ e.publisher or (e.url|domain) }}{% if e.published %} · {{ e.published|date }}{% endif %}{% if e.rating %} · rated “{{ e.rating }}”{% endif %}</span></li>{% endfor %}
+    </ol>{% endif %}
+    {% if r.considered and r.considered|length > v.evidence|length %}
+    <details class="small"><summary>Other sources considered ({{ r.considered|length }})</summary><ul>
+      {% for e in r.considered %}<li><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title or e.url }}</a> <span class="muted">{{ e.url|domain }} · relevance {{ "%.2f"|format(e.score) }}</span></li>{% endfor %}
+    </ul></details>{% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% set p = c.propagation %}
+{% if p %}
+<section class="card">
+  <h2>Propagation <span class="pill lvl-{{ p.level }}">{{ p.level|level_text }}</span></h2>
+  <p>{{ p.explanation }}</p>
+  <div class="muted small">Search query: “{{ p.query }}” · searched: {{ p.sources_used|join(", ") }}</div>
+  {% if p.sources_unavailable %}<div class="muted small">Not searchable: {{ p.sources_unavailable|join("; ") }}</div>{% endif %}
+  {% if p.burst and p.burst.peak %}<div class="small mt">Peak: <b>{{ p.burst.peak }}</b> similar posts by {{ p.burst.peak_authors }} accounts in the 6-hour window starting {{ p.burst.peak_start|date }} (median {{ p.burst.median }}, robust z = {{ p.burst.z }}).</div>{% endif %}
+
+  {% if p.timeline %}{% set g = bars(p.timeline) %}
+  <h4>Similar posts over time (6-hour buckets)</h4>
+  <svg class="chart" viewBox="0 0 {{ g.width }} {{ g.height }}" role="img" aria-label="Similar posts per 6-hour window">
+    {% for b in g.bars %}<rect x="{{ b.x }}" y="{{ b.y }}" width="{{ b.w }}" height="{{ b.h }}"><title>{{ b.label }}: {{ b.v }}</title></rect>{% endfor %}
+  </svg><div class="axis small muted"><span>{{ g.first }}</span><span>max {{ g.max }}</span><span>{{ g.last }}</span></div>
+  {% endif %}
+
+  {% if p.news_timeline %}{% set g = bars(p.news_timeline, "value") %}
+  <h4>News coverage of this topic (GDELT, articles per interval, last month)</h4>
+  <svg class="chart news" viewBox="0 0 {{ g.width }} {{ g.height }}" role="img" aria-label="News articles over time">
+    {% for b in g.bars %}<rect x="{{ b.x }}" y="{{ b.y }}" width="{{ b.w }}" height="{{ b.h }}"><title>{{ b.label }}: {{ b.v }}</title></rect>{% endfor %}
+  </svg><div class="axis small muted"><span>{{ g.first }}</span><span>max {{ g.max }}</span><span>{{ g.last }}</span></div>
+  {% endif %}
+
+  {% if p.clusters %}<h4>Accounts posting near-identical content close together</h4>
+  {% for g in p.clusters %}<div class="cluster small"><b>{{ g.accounts|length }} accounts</b> within {{ g.span_minutes }} min: {{ g.accounts|join(", ") }}</div>{% endfor %}{% endif %}
+
+  {% if p.matches %}
+  <details class="mt"><summary>{{ p.matches|length }} similar posts found</summary>
+    <table class="tbl small"><thead><tr><th>When</th><th>Where</th><th>Who</th><th>Post</th><th>Sim.</th></tr></thead><tbody>
+    {% for m in p.matches|reverse %}<tr><td>{{ m.published|date }}</td><td>{{ m.platform }}</td><td>{{ m.author }}</td>
+      <td><a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.text|truncate(80) }}</a></td><td>{{ m.similarity }}</td></tr>{% endfor %}
+    </tbody></table></details>
+  {% endif %}
+</section>
+{% endif %}
+
+{% if c.meta %}<div class="muted small">Evidence sources queried: {{ c.meta.evidence_sources|join(", ") }} · total time {{ c.meta.total_s }} s · <a href="/api/checks/{{ c.id }}">JSON</a></div>{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if c.status in ["queued", "running"] %}
+<script src="/static/poll.js"></script>
+{% endif %}
+{% endblock %}

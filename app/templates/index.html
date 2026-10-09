@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Paste a post. See which claims hold up — and how it is spreading.</h1>
+  <p class="lede">We download the post, transcribe speech, read on-screen text, pull out checkable claims (numbers,
+    dates, "according to…"), and check each one against fact-checkers, government releases and news.</p>
+
+  {% if error %}<div class="alert">{{ error }}</div>{% endif %}
+
+  <form class="linkform" method="post" action="/check">
+    <label for="url" class="sr">Post link</label>
+    <input id="url" name="url" type="url" required placeholder="https://www.youtube.com/watch?v=…  or  https://x.com/…/status/…">
+    <button type="submit">Check link</button>
+  </form>
+
+  <details class="uploadbox">
+    <summary>Platform not supported? Upload the video, audio or image instead</summary>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+      <input type="file" name="file" required accept="video/*,audio/*,image/*">
+      <textarea name="caption" rows="2" placeholder="Optional: paste the post's caption / text"></textarea>
+      <button type="submit">Upload &amp; check</button>
+    </form>
+  </details>
+</section>
+
+<section class="grid2">
+  <div class="card">
+    <h2>Platforms</h2>
+    <ul class="plist">
+      {% for key in ["youtube", "x", "facebook", "reddit", "instagram", "web"] %}{% set p = platforms[key] %}
+      <li><span class="pill {{ p.support }}">{{ p.support }}</span> <b>{{ {"youtube":"YouTube","x":"X / Twitter","facebook":"Facebook","reddit":"Reddit","instagram":"Instagram","web":"News & other sites"}[key] }}</b>
+        {% if p.reason %}<div class="muted small">{{ p.reason }}</div>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Services configured</h2>
+    <ul class="slist">
+      {% for name, ok in services.items() %}<li><span class="dot {{ 'ok' if ok else 'off' }}"></span>{{ name }}{% if not ok %} <span class="muted small">— key not set, skipped</span>{% endif %}</li>{% endfor %}
+    </ul>
+    {% if recent %}<h2 class="mt">Recent checks</h2>
+    <ul class="recent">{% for r in recent %}<li><a href="/check/{{ r.id }}">{{ r.url|truncate(60) }}</a> <span class="muted small">{{ r.status }}</span></li>{% endfor %}</ul>{% endif %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,8 @@
+.env
+.venv/
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env.*
+.claude/settings.local.json

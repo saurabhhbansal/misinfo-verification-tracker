@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}History — Misinformation Tracker{% endblock %}
+{% block content %}
+<h1>Past checks</h1>
+{% if not recent %}<p class="muted">No checks yet.</p>{% else %}
+<table class="tbl">
+  <thead><tr><th>When</th><th>Link</th><th>Platform</th><th>Status</th><th>Verdicts</th><th>Spread</th></tr></thead>
+  <tbody>
+  {% for r in recent %}
+  <tr><td class="small">{{ r.created_at|date }}</td>
+    <td><a href="/check/{{ r.id }}">{{ r.url|truncate(60) }}</a></td>
+    <td>{{ r.platform }}</td><td>{{ r.status }}</td>
+    <td>{% for l in r.labels %}<span class="dotl {{ l }}" title="{{ l }}"></span>{% endfor %}</td>
+    <td class="small">{{ r.spread_level|level_text }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>{% endif %}
+{% endblock %}
