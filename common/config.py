@@ -27,6 +27,7 @@ TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
 # --- models ---
 GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 WHISPER_MODEL = os.getenv("WHISPER_MODEL", "small")  # tiny | base | small | medium | large-v3
+WHISPER_THREADS = int(os.getenv("WHISPER_THREADS", "0"))  # 0 = auto
 EMBED_MODEL = os.getenv("EMBED_MODEL", "intfloat/multilingual-e5-small")
 NLI_MODEL = os.getenv("NLI_MODEL", "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7")
 

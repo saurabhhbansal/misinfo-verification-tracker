@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from common import config
@@ -51,17 +52,21 @@ def fetch(url: str, check_id: str) -> ContentBundle:
 def extract_text(bundle: ContentBundle, do_stt: bool = True, do_ocr: bool = True) -> ContentBundle:
     """Run speech-to-text and OCR on the downloaded media files."""
     transcripts, langs = [], []
-    for p in bundle.media_paths:
-        ext = Path(p).suffix.lower()
-        if do_stt and ext in VIDEO_EXT | AUDIO_EXT:
-            text, lang = stt.transcribe(p)
+    av = [p for p in bundle.media_paths if Path(p).suffix.lower() in VIDEO_EXT | AUDIO_EXT] if do_stt else []
+    # speech-to-text runs in a background thread while OCR runs here (different engines, both CPU-bound)
+    with ThreadPoolExecutor(max_workers=1) as ex:
+        stt_jobs = [ex.submit(stt.transcribe, p) for p in av]
+        for p in bundle.media_paths:
+            ext = Path(p).suffix.lower()
+            if do_ocr and ext in VIDEO_EXT:
+                bundle.ocr_lines.extend(ocr.ocr_video(p))
+            elif do_ocr and ext in IMAGE_EXT:
+                bundle.ocr_lines.extend(ocr.ocr_image(p))
+        for job in stt_jobs:
+            text, lang = job.result()
             if text:
                 transcripts.append(text)
                 langs.append(lang)
-        if do_ocr and ext in VIDEO_EXT:
-            bundle.ocr_lines.extend(ocr.ocr_video(p))
-        elif do_ocr and ext in IMAGE_EXT:
-            bundle.ocr_lines.extend(ocr.ocr_image(p))
     bundle.transcript = "\n".join(transcripts)
     bundle.transcript_lang = ",".join(sorted(set(langs)))
     bundle.ocr_lines = ocr.dedupe_lines(bundle.ocr_lines)

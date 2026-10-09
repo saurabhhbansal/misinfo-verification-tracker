@@ -48,3 +48,13 @@ def test_assess_levels():
     assert burst.assess({"z": 0.5}, [], 10)[0] == "low"
     assert burst.assess({"z": 5, "peak": 20, "peak_authors": 15}, [], 30)[0] == "elevated"
     assert burst.assess({"z": 0}, [{"accounts": ["a", "b", "c"], "span_minutes": 4}], 5)[0] == "high"
+
+
+def test_embeddings_work_from_worker_threads():
+    """Regression: grad mode is thread-local; encoding from a worker thread must not leave grad-tracked tensors."""
+    from concurrent.futures import ThreadPoolExecutor
+    from common import embed
+    with ThreadPoolExecutor(2) as ex:
+        a = ex.submit(embed.encode, ["first text in a thread"]).result()
+    b = embed.similarity(["first text in a thread"], ["another passage"])  # main thread afterwards
+    assert a.shape[0] == 1 and b.shape == (1, 1)

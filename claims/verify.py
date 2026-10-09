@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import logging
 import re
+import threading
 from functools import lru_cache
 
 from claims import numeric
@@ -104,8 +105,16 @@ def _verify_llm(claim: Claim, evidence: list[Evidence]) -> Verdict:
 
 
 # ------------------------------------------------------------------ fallback (no LLM)
-@lru_cache(maxsize=1)
+_nli_lock = threading.Lock()
+
+
 def _nli():
+    with _nli_lock:  # first load must not race (lazy imports in transformers)
+        return _load_nli()
+
+
+@lru_cache(maxsize=1)
+def _load_nli():
     from transformers import pipeline
     return pipeline("text-classification", model=config.NLI_MODEL, device=-1, top_k=None)
 

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import traceback
 from dataclasses import asdict
@@ -10,12 +11,13 @@ from pathlib import Path
 from app import db
 from claims import extract as claim_extract
 from claims import retrieve, verify
-from common import llm
+from common import embed, llm
 from common.models import ContentBundle
 from ingest import extract as ingest
 from propagation import report as propagation
 
 log = logging.getLogger(__name__)
+CLAIM_WORKERS = 3  # Groq free tier: 30 requests/min; Tavily/Fact Check calls are per claim
 
 
 def _stage(cid: str, text: str):
@@ -45,15 +47,23 @@ def run(cid: str, url: str | None = None, upload: tuple[Path, str, str] | None =
         _stage(cid, "Finding checkable claims")
         t = time.time()
         claims, method = claim_extract.extract_claims(bundle)
-        results, sources_used = [], set()
-        for i, claim in enumerate(claims, 1):
-            _stage(cid, f"Verifying claim {i} of {len(claims)}")
+        _stage(cid, f"Verifying {len(claims)} claims")
+        embed.encode(["warm-up"])  # load the embedder once before worker threads start
+        results, sources_used = [None] * len(claims), set()
+
+        def check(claim):
             evidence, used = retrieve.find_evidence(claim, bundle.url)
-            sources_used.update(used)
             verdict = verify.verify(claim, evidence)
-            results.append({"claim": asdict(claim), "verdict": asdict(verdict),
-                            "considered": [asdict(e) for e in evidence]})
-            db.update(cid, claims=results)
+            return used, {"claim": asdict(claim), "verdict": asdict(verdict),
+                          "considered": [asdict(e) for e in evidence]}
+
+        with ThreadPoolExecutor(max_workers=CLAIM_WORKERS) as ex:
+            futures = {ex.submit(check, c): i for i, c in enumerate(claims)}
+            for done, f in enumerate(as_completed(futures), 1):
+                used, results[futures[f]] = f.result()
+                sources_used.update(used)
+                _stage(cid, f"Verified {done} of {len(claims)} claims")
+                db.update(cid, claims=[r for r in results if r])
         timings["claims"] = round(time.time() - t, 1)
         db.update(cid, claims=results)
 

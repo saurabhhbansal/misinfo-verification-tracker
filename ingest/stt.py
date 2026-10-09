@@ -11,8 +11,12 @@ log = logging.getLogger(__name__)
 
 @lru_cache(maxsize=1)
 def _model():
+    import os
+
     from faster_whisper import WhisperModel
-    return WhisperModel(config.WHISPER_MODEL, device="cpu", compute_type="int8")
+    # logical/2 ≈ physical cores; hyper-threads slow CTranslate2 down (59 s -> 39 s -> 77 s for 4/8/16 threads)
+    threads = config.WHISPER_THREADS or max(1, (os.cpu_count() or 2) // 2)
+    return WhisperModel(config.WHISPER_MODEL, device="cpu", compute_type="int8", cpu_threads=threads)
 
 
 def transcribe(path: str) -> tuple[str, str]:

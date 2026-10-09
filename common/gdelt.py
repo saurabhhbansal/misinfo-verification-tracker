@@ -22,7 +22,7 @@ _cache: dict[str, tuple[float, dict]] = {}
 CACHE_TTL = 3600
 
 
-def _get(params: dict, retries: int = 3) -> dict:
+def _get(params: dict, retries: int = 2) -> dict:
     key = repr(sorted(params.items()))
     hit = _cache.get(key)
     if hit and time.time() - hit[0] < CACHE_TTL:
