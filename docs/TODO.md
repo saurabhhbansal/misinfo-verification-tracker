@@ -27,6 +27,9 @@
 - [x] Evaluations run -> docs/evaluation.md (QuanTemp NLI n=300, LLM n=150; synthetic propagation, window tuned
       60 -> 10 min and validated on a held-out seed)
 
+- [x] Write-ups: docs/OVERVIEW.md (professor brief), final docs/architecture.md (6 Mermaid diagrams, module specs,
+      API, ADRs), docs/limitations.md (limitations, ethics, future scope incl. account-history analysis), README
+
 ## Left
 1. Forced-choice QuanTemp LLM run (same 150 claims) for like-for-like comparison with the paper (needs Groq quota).
 2. Claim `context` attribution is sometimes wrong (says "PIB screenshot" for numbers that came from the tweet).
@@ -34,7 +37,4 @@
 4. Tune `MIN_RELEVANCE` (claims/retrieve.py) and similarity thresholds on real runs.
 5. Optional extra evaluation: AVeriTeC dev subset; CheckThat! check-worthiness for the claim extractor.
 6. 4–5 documented real example runs (YouTube Hindi, X post, news article, upload, unsupported Instagram).
-7. README (setup, keys, run, module owners), `.env.example`, `docs/architecture.md` → final version,
-   limitations + future scope (incl. original-poster account-history analysis, Reddit/X search, IndicConformer,
-   PaddleOCR, image reverse search).
 8. Optional polish: UI review, a progress bar per stage, Dockerfile.
